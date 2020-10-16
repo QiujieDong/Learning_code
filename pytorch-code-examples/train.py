@@ -1,8 +1,9 @@
 """Train the model"""
 
-import argparse
-import logging
+import argparse #参数解释器
+import logging #日志记录
 import os
+
 
 import apex
 from apex import amp
