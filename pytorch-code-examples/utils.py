@@ -174,9 +174,9 @@ def reduce_tensor(tensor, args):
     """
     average tensor with all GPU
     """
-    rt = tensor.clone()
+    rt = tensor.clone()#clone()函数可以返回一个完全相同的tensor,新的tensor开辟新的内存，但是仍然留在计算图中。与之对应的是detach()复制
     dist.all_reduce(rt, op=dist.ReduceOp.SUM)
-    rt /= args.world_size
+    rt /= args.world_size#world_size是进程数，也就是机器的个数
     return rt
 
 

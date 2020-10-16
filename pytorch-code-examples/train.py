@@ -5,22 +5,22 @@ import logging #日志记录
 import os
 
 
-import apex
+import apex #NVIDIA apex可以实现混合精度加速
 from apex import amp
-from apex.parallel import DistributedDataParallel as DDP
+from apex.parallel import DistributedDataParallel as DDP #实现多线程数据分布式训练
 import numpy as np
 import torch
-import torch.backends.cudnn as cudnn
+import torch.backends.cudnn as cudnn #为整个网络的每个卷积层搜索最适合它的卷积实现算法，进而实现网络的加速。适用变化不大的网络
 import torch.optim as optim
-from tqdm import tqdm
+from tqdm import tqdm #Tqdm 是一个快速，可扩展的Python进度条，可以在 Python 长循环中添加一个进度提示信息
 
-import utils
-from utils import reduce_tensor
-import model.net as net
-import model.data_loader as data_loader
-from evaluate import evaluate
+import utils #python函数和 使公共模式更短更容易的类
+from utils import reduce_tensor #reduce_tensor：average tensor with all GPU
+import model.net as net #model文件夹下的net.py中的net()函数
+import model.data_loader as data_loader #model文件夹下的data_loader.py中的data_loader()函数
+from evaluate import evaluate #自定义的evaluate函数
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser() #参数配置
 parser.add_argument('--data_dir', default='data/64x64_SIGNS',
                     help="Directory containing the dataset")
 parser.add_argument('--model_dir', default='experiments/base_model',
@@ -234,7 +234,7 @@ if __name__ == '__main__':
         logging.info("using apex fp16, opt_level={}, keep_batchnorm_fp32={}".format(params.fp16_opt_level,
                                                                                     params.keep_batchnorm_fp32))
         # 'O1' enable bn32 default, disable explicitly
-        if params.fp16_opt_level == 'O1':
+        if params.fp16_opt_level == 'O1':#这里是字母O,不是数字0.
             params.keep_batchnorm_fp32 = None
         model, optimizer = amp.initialize(model, optimizer, opt_level=params.fp16_opt_level,
                                           keep_batchnorm_fp32=params.keep_batchnorm_fp32)
