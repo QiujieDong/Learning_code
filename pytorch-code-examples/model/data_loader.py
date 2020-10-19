@@ -19,7 +19,7 @@ eval_transformer = transforms.Compose([
 ])  # transform it into a torch tensor
 
 
-class SIGNSDataset(Dataset):
+class SIGNSDataset(Dataset): #继承torch中的dataset类，继承dataset类必须重写__len__与__getitem__两个方法
     """
     A standard PyTorch definition of Dataset which defines the functions __len__ and __getitem__.
     """
@@ -38,11 +38,11 @@ class SIGNSDataset(Dataset):
         self.labels = [int(os.path.split(filename)[-1][0]) for filename in self.filenames]
         self.transform = transform
 
-    def __len__(self):
+    def __len__(self): #返回数据长度
         # return size of dataset
         return len(self.filenames)
 
-    def __getitem__(self, idx):
+    def __getitem__(self, idx): #返回训练数据，image与label
         """
         Fetch index idx image and labels from dataset. Perform transforms on image.
 
@@ -54,14 +54,14 @@ class SIGNSDataset(Dataset):
             label: (int) corresponding label of image
         """
         image = Image.open(self.filenames[idx])  # PIL image
-        image = self.transform(image)
+        image = self.transform(image) #image转成tensor形式
         return image, self.labels[idx]
 
 
 def fetch_dataloader(types, data_dir, params):
     """
     Fetches the DataLoader object for each type in types from data_dir.
-
+    获取对应于type的数据集
     Args:
         types: (list) has one or more of 'train', 'val', 'test' depending on which data is required
         data_dir: (string) directory containing the dataset
@@ -75,14 +75,14 @@ def fetch_dataloader(types, data_dir, params):
 
     for split in ['train', 'val', 'test']:
         if split in types:
-            path = os.path.join(data_dir, "{}_signs".format(split))
+            path = os.path.join(data_dir, "{}_signs".format(split)) #对应type数据集的存储路径
 
             # use the train_transformer if training data, else use eval_transformer without random flip
             # take care of 'pin_memory' and 'num_workers'
             if split == 'train':
                 train_set = SIGNSDataset(path, train_transformer)
                 sampler = None
-                if params.distributed:
+                if params.distributed: #如果采用数据多机多卡的数据并行，DistributedSampler()为每一个子进程分出一部分数据集，避免不同进程之间数据重复
                     sampler = torch.utils.data.distributed.DistributedSampler(train_set)
                 dl = DataLoader(train_set, batch_size=params.batch_size_pre_gpu, shuffle=(sampler is None),
                                 num_workers=params.num_workers, pin_memory=params.cuda, sampler=sampler)
