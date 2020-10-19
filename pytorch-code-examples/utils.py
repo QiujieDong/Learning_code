@@ -41,7 +41,7 @@ class Params():
         return self.__dict__
 
 
-class RunningAverage():
+class RunningAverage():#计算平均值
     """A simple class that maintains the running average of a quantity
     
     Example:

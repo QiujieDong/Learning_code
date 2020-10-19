@@ -44,14 +44,14 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
         num_steps: (int) number of batches to train on, each of size params.batch_size
     """
 
-    # set model to training mode
-    model.train()
+    # set model to training mode,这一项不加程序也可以运行。
+    model.train() #model.train与model.eval针对网络train与eval采用不同的方式。比如Batch Normalization和Dropout
 
     # summary for current training loop and a running average object for loss
     summ = []
-    loss_avg = utils.RunningAverage()
+    loss_avg = utils.RunningAverage() #计算平均值函数，由用户自定义的函数
 
-    # Use tqdm for progress bar
+    # Use tqdm for progress bar，使用tqdm做出训练进度条，一共len(dataloader)个进度
     with tqdm(total=len(dataloader)) as t:
         for i, (train_batch, labels_batch) in enumerate(dataloader):
             train_batch = train_batch.to(args.device, non_blocking=params.cuda)
