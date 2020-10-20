@@ -50,7 +50,8 @@ class Net(nn.Module):
 
         Args:
             s: (Variable) contains a batch of images, of dimension batch_size x 3 x 64 x 64 .
-
+            batch_size x 3 x 64 x 64：3是三维数据（图像RGB），64x64是本example中传入图片的size
+            3 x 64 x 64：就是一张图片的数据维度。
         Returns:
             out: (Variable) dimension batch_size x 6 with the log probabilities for the labels of each image.
 
@@ -61,10 +62,10 @@ class Net(nn.Module):
         s = torch.relu(torch.max_pool2d(self.bn2(self.conv2(s)), 2))
         s = torch.relu(torch.max_pool2d(self.bn3(self.conv3(s)), 2))
 
-        # flatten the output for each image
-        s = s.view(s.shape[0], -1)
+        # flatten the output for each image,view()返回一个有相同数据但大小不同的tensor。
+        s = s.view(s.shape[0], -1) #s.shape[0]=batch_size的，所以展成batch_size行，列数-1(根据行调节)的二维tensor
 
-        # apply 2 fully connected layers with dropout
+        # apply 2 fully connected layers with dropout。train–apply dropout if is True. Default: True
         s = torch.dropout(torch.relu(self.fcbn1(self.fc1(s))), p=self.dropout_rate, train=True)
         s = self.fc2(s)
 
@@ -82,7 +83,7 @@ def loss_fn(args):
     Returns:
         loss (Tensor) cross entropy loss for all images in the batch
     """
-    return nn.CrossEntropyLoss().to(args.device)
+    return nn.CrossEntropyLoss().to(args.device) #计算的loss复制一份到device
 
 
 def accuracy(outputs, labels):
@@ -95,7 +96,7 @@ def accuracy(outputs, labels):
 
     Returns: (float) accuracy in [0,1]
     """
-    _, predicted = torch.max(outputs, dim=1)
+    _, predicted = torch.max(outputs, dim=1) #values, indices = torch.max()
     return int((predicted == labels).sum()) / len(labels)
 
 
