@@ -54,7 +54,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
     # Use tqdm for progress bar，使用tqdm做出训练进度条，一共len(dataloader)个进度
     with tqdm(total=len(dataloader)) as t:
         for i, (train_batch, labels_batch) in enumerate(dataloader):
-            train_batch = train_batch.to(args.device, non_blocking=params.cuda)
+            train_batch = train_batch.to(args.device, non_blocking=params.cuda) #将数据copy到指定的device上运行，non_blocking = True 参数传递给 cuda() 调用
             labels_batch = labels_batch.to(args.device, non_blocking=params.cuda)
 
             # compute model output and loss
@@ -223,7 +223,7 @@ if __name__ == '__main__':
 
     # Define the model and optimizer
     logging.info("Define model and optimizer...")
-    model = net.Net(params).to(args.device)
+    model = net.Net(params).to(args.device) #传回构建的model
     optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
 
     if params.sync_bn:
