@@ -11,7 +11,7 @@ from apex.parallel import DistributedDataParallel as DDP #实现多线程数据�
 import numpy as np
 import torch
 import torch.backends.cudnn as cudnn #为整个网络的每个卷积层搜索最适合它的卷积实现算法，进而实现网络的加速。适用变化不大的网络
-import torch.optim as optim
+import torch.optim as optim #torch.nn.functional.下的函数与直接写成torch.是一样的，都是函数,需要传入数据。torch.nn.是类，不用传入数据。
 from tqdm import tqdm #Tqdm 是一个快速，可扩展的Python进度条，可以在 Python 长循环中添加一个进度提示信息
 
 import utils #python函数和 使公共模式更短更容易的类
@@ -61,16 +61,16 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
             output_batch = model(train_batch)
             loss = loss_fn(output_batch, labels_batch)
 
-            # update weight
-            optimizer.zero_grad()
+            # update weight,"""Clears the gradients of all optimized :class:`torch.Tensor` s."""
+            optimizer.zero_grad() #在进行新的optim之前先将上次的grad设为0，使用求导计算本次要更新的梯度。
 
-            if params.fp16:
+            if params.fp16: #apex混合精度加速的使用，加速反向传播
                 with amp.scale_loss(loss, optimizer) as scaled_loss:
                     scaled_loss.backward()
             else:
-                loss.backward()
+                loss.backward() #加速反向传播
 
-            optimizer.step()
+            optimizer.step() #进行参数更新，也就是weight与bias的更新
 
             # Evaluate summaries only once in a while
             if i % params.save_summary_steps == 0:
@@ -224,7 +224,7 @@ if __name__ == '__main__':
     # Define the model and optimizer
     logging.info("Define model and optimizer...")
     model = net.Net(params).to(args.device) #传回构建的model
-    optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
+    optimizer = optim.Adam(model.parameters(), lr=params.learning_rate) #使用torch.optim进行优化
 
     if params.sync_bn:
         logging.info("using apex synced BN")
