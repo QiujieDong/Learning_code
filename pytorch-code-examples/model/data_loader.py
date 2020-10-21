@@ -85,7 +85,7 @@ def fetch_dataloader(types, data_dir, params):
                 if params.distributed: #如果采用数据多机多卡的数据并行，DistributedSampler()为每一个子进程分出一部分数据集，避免不同进程之间数据重复
                     sampler = torch.utils.data.distributed.DistributedSampler(train_set)
                 dl = DataLoader(train_set, batch_size=params.batch_size_pre_gpu, shuffle=(sampler is None),
-                                num_workers=params.num_workers, pin_memory=params.cuda, sampler=sampler)
+                                num_workers=params.num_workers, pin_memory=params.cuda, sampler=sampler) #从数据中每次抽出batch size个样本
             else:
                 val_set = SIGNSDataset(path, eval_transformer)
                 sampler = None
