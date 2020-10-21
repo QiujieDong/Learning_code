@@ -37,14 +37,14 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
         num_steps: (int) number of batches to train on, each of size params.batch_size
     """
 
-    # set model to evaluation mode
+    # set model to evaluation mode,声明进行model evaluate
     model.eval()
 
     # summary for current eval loop
     summ = []
 
     # compute metrics over the dataset
-    with torch.no_grad():
+    with torch.no_grad(): #不进行求导计算梯度
         for data_batch, labels_batch in dataloader:
             # move to device
             data_batch = data_batch.to(args.device, non_blocking=params.cuda)

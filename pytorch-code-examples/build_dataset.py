@@ -58,7 +58,7 @@ if __name__ == '__main__':
     # Split the images in 'train_signs' into 80% train and 20% val
     # Make sure to always shuffle with a fixed seed so that the split is reproducible
     random.seed(230)
-    filenames.sort()
+    filenames.sort() #排序
     random.shuffle(filenames)
 
     split = int(0.8 * len(filenames))
