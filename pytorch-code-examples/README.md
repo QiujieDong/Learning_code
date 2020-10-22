@@ -73,7 +73,7 @@ For every new experiment, you will need to create a new directory under `experim
 ```
 python train.py --data_dir data/64x64_SIGNS --model_dir experiments/base_model
 ```
-** NOTE: It doesn't work in my Ubuntu when I ran the above command.  Run the library module of torch.distributed as a script when training your model. Run the following code! **
+**NOTE: It doesn't work in my Ubuntu when I ran the above command.  Run the library module of torch.distributed as a script when training your model. Run the following code!**
 
 ```
 python -m torch.distributed.launch --nproc_per_node=2 train.py --data_dir data/64x64_SIGNS --model_dir experiments/base_model
