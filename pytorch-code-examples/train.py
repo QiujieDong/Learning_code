@@ -28,7 +28,8 @@ parser.add_argument('--model_dir', default='experiments/base_model',
 parser.add_argument('--restore_file', default=None,
                     help="Optional, name of the file in --model_dir containing weights to reload before \
                     training")  # 'best' or 'train'
-parser.add_argument('--local_rank', default=-1, type=int)
+parser.add_argument('--local_rank', default=-1, type=int, help="Rank of the current process")
+parser.add_argument('--world_size', default=1, type=int, help="Number of processes participating in the job")
 
 
 def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
@@ -198,7 +199,6 @@ if __name__ == '__main__':
 
     # Set device
     device = None
-    args.world_size = 1 #机器数
     if params.cuda:
         device = torch.device('cuda')
         cudnn.benchmark = True  # Enable cudnn
@@ -207,7 +207,7 @@ if __name__ == '__main__':
     if params.distributed and params.device_count > 1 and params.cuda:
         torch.cuda.set_device(args.local_rank) #如果参数为负，则此操作为空操作
         device = torch.device('cuda', args.local_rank) #device(type='cuda', index=local_rank)
-        torch.distributed.init_process_group(backend="nccl") #通信后端形式
+        torch.distributed.init_process_group(backend="nccl") #backend通信后端形式
         args.world_size = torch.distributed.get_world_size()
 
     args.device = device

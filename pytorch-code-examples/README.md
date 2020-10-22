@@ -73,6 +73,12 @@ For every new experiment, you will need to create a new directory under `experim
 ```
 python train.py --data_dir data/64x64_SIGNS --model_dir experiments/base_model
 ```
+**NOTE: It doesn't work in my Ubuntu when I ran the above command.  Run the library module of torch.distributed as a script when training your model. Run the following code! **
+
+```
+python -m torch.distributed.launch --nproc_per_node=2 train.py --data_dir data/64x64_SIGNS --model_dir experiments/base_model
+```
+
 It will instantiate a model and train it on the training set following the hyperparameters specified in `params.json`. It will also evaluate some metrics on the validation set.
 
 4. __Your first hyperparameters search__ We created a new directory `learning_rate` in `experiments` for you. Now, run
