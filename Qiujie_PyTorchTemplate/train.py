@@ -36,8 +36,6 @@ paraer.add_argument('--restore_weights', default=None,
                     help="Optional (best of last), restore weights file in --model_dir before training")
 paraer.add_argument('--local_rank', default=-1, type=int,
                     help="Rank of the current process")
-paraer.add_argument('--world_size', default=1, type=int,
-                    help="Number of processes participating in the job")
 
 
 def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
