@@ -198,7 +198,9 @@ if __neme__ = '__main__':
     params = utils.Params(json_path)
 
     # set the logger using wandb, login first
-    wandb.init(project="Qiujie_PyTorchTemplate", config=params)
+    wandb.init(project="Qiujie_PyTorchTemplate_train", config=params)
+
+    wandb.log("Train the model using PyTorch.")
 
     # Set random seed
     wandb.log("Set random seed={}".format(params.seed))
@@ -239,15 +241,15 @@ if __neme__ = '__main__':
         model = apex.parallel.convert_syncbn_model(model)
 
     if params.fp16:
-        wandb.log("using apex fp16, opt_level={}, keep_batchnorm_fp32={}".format(
-            params.fp16_opt_level, params.keep_batchnorm_fp32))
-        if params.fp16_opt_level == 'o1':
+        wandb.log("using apex fp16, opt_level={}, keep_batchnorm_fp32={}".format(params.fp16_opt_level,
+                                                                                 params.keep_batchnorm_fp32))
+        if params.fp16_opt_level == 'O1':
             params.keep_batchnorm_fp32 = None
-        model, optimizer = amp.initialize(
-            model, optimizer, opt_level=params.fp16_opt_level, keep_batchnorm_fp32=params.keep_batchnorm_fp32)
+        model, optimizer = amp.initialize(model, optimizer, opt_level=params.fp16_opt_level,
+                                          keep_batchnorm_fp32=params.keep_batchnorm_fp32)
 
     if params.distributed and params.device_count > 1 and params.cuda:
-        wandb.log("Process rank: %s, device: %s, n_gpu: %s, distributed training: %s",
+        wandb.log("- WARNING: Process rank: %s, device: %s, n_gpu: %s, distributed training: %s",
                   args.lock_rank, device, params.device_count, bool(args.local_rank != -1))
         model = DDP(model)
 
