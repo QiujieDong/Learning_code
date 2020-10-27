@@ -3,7 +3,7 @@
     "batch_size_pre_gpu": 64,
     "device_count": 2,
     "cuda": true,
-    "distributed": true,
+    "distributed": false,
     "fp16": true,
     "fp16_opt_level": "O1",
     "keep_batchnorm_fp32": true,

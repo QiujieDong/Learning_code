@@ -60,6 +60,8 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
     summ = []
     loss_avg = utils.RunningAverage()
 
+    wandb_images = []
+
     # Use tqdm for process for progress bar
     with tqdm(total=len(dataloader)) as t:
         for i, (train_batch, labels_batch) in enumerate(dataloader):
@@ -101,6 +103,9 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
             # Update the average loss
             loss_avg.update(loss.item())
 
+            wandb_images.append(wandb.Image(
+                train_batch[0], caption="Pred: {} Truth: {}".format(summary_batch['accuracy'], loss_avg)))
+
             # Delete loss for saving memory
             del loss
 
@@ -117,6 +122,11 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
                                 for k, v in metrics_mean.items())
 
     logging.info("- Train metrics: " + metrics_string)
+    wandb.log({
+        "wandb_images": wandb_images,
+        "Accuracy": 100 * metrics_mean['accuracy'].item(),
+        "Loss": metrics_mean['loss'].item()})
+    print('done')
 
 
 def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer, loss_fn, metrics, train_sampler, params, args):

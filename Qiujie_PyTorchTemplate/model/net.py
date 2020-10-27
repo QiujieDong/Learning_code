@@ -68,6 +68,7 @@ class Net(nn.Module):
         # apply 2 fully connected layers with dropout. apply dropout if train=True
         s = torch.dropout(torch.relu(self.fcbn1(self.fc1(s))),
                           p=self.dropout_rate, train=True)
+        s = self.fc2(s)
 
         return s
 

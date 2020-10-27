@@ -1,7 +1,8 @@
 """Evaluates the model using PyTorch."""
 
-import os
 import argparse
+import logging
+import os
 
 # use NVIDIA apex, calculate distributed data parallel, to achieve accelerate
 import apex
@@ -51,6 +52,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
 
     # summary for current eval loop
     summ = []
+    wandb_images = []
 
     # compute metrics over the dataset
     with torch.no_grad():
@@ -82,7 +84,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
                                          for x in summ]) for metric in summ[0]}
         metrics_string = " ; ".join("{}: {:05.3f}".format(k, v)
                                     for k, v in metrics_mean.items())
-        wandb.log({"- Eval metrics": metrics_string})
+        logging.info("- Eval metrics : " + metrics_string)
 
         return metrics_mean
 
