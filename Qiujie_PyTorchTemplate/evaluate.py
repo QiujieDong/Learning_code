@@ -22,18 +22,18 @@ import model.net as net
 import model.data_loader as data_loader
 import utils.utils as utils
 
-paraer = argparse.ArgumentParser()
+parser = argparse.ArgumentParser()
 parser.add_argument('--dataset_dir', default='/data/SIGNS_data/64x64_SIGNS',
                     help="Directory containing the dataset")
-paraer.add_argument('--model_dir', default='experiments/base_model',
+parser.add_argument('--model_dir', default='experiments/base_model',
                     help="Directory containing the params.json and checkpoints of train")
-paraer.add_argument('--restore_weights', default=None,
+parser.add_argument('--restore_weights', default=None,
                     help="Optional (best of last), restore weights file in --model_dir before training")
-paraer.add_argument('--local_rank', default=-1, type=int,
+parser.add_argument('--local_rank', default=-1, type=int,
                     help="Rank of the current process")
 
 
-def evaluate(model, loss_fn, dataloader, metircs, params, args):
+def evaluate(model, loss_fn, dataloader, metrics, params, args):
     """Evaluate the model on 'num_steps' batches.
 
     Args:
@@ -56,7 +56,7 @@ def evaluate(model, loss_fn, dataloader, metircs, params, args):
     with torch.no_grad():
         for data_batch, labels_batch in dataloader:
             # move to device
-            data_batch = data_batch.to(args.device, no_blocking=params.cuda)
+            data_batch = data_batch.to(args.device, non_blocking=params.cuda)
             labels_batch = labels_batch.to(
                 args.device, non_blocking=params.cuda)
 
@@ -71,7 +71,7 @@ def evaluate(model, loss_fn, dataloader, metircs, params, args):
 
             if params.distributed:
                 for k, v in summary_batch.items():
-                    v = reduce_tensor(torch.tensor(
+                    v = utils.reduce_tensor(torch.tensor(
                         v, device=args.device), args).item()
                     summary_batch[k] = v
             summ.append(summary_batch)
@@ -82,7 +82,7 @@ def evaluate(model, loss_fn, dataloader, metircs, params, args):
                                          for x in summ]) for metric in summ[0]}
         metrics_string = " ; ".join("{}: {:05.3f}".format(k, v)
                                     for k, v in metrics_mean.items())
-        wandb.log("- Eval metrics : " + metrics_string)
+        wandb.log({"- Eval metrics": metrics_string})
 
         return metrics_mean
 
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     # load the parameters
     args = parser.parse_args()
     # load the parameters from the params.json file
-    args = paraer.parse_args()
+    args = parser.parse_args()
     json_path = os.path.join(args.model_dir, 'params.json')
     assert os.path.isfile(
         json_path), "No json configuration file found at {}".format(json_path)

@@ -156,3 +156,87 @@ def load_checkpoint(checkpoint_path, args, model, optimizer=None):
 
     if not os.path.exists(checkpoint_path):
         raise ("File doesn't exist {}".format(checkpoint_path))
+
+    checkpoint = None
+
+    if args.local_rank != -1:
+        checkpoint = torch.load(checkpoint_path)
+    else:
+        checkpoint = torch.load(
+            checkpoint_path, map_location=lambda storage, loc: storage.cuda(args.local_rank))
+
+    model.load_state_dict(checkpoint_path['state_dict'])
+
+    if optimizer:
+        optimizer.load_state_dict(checkpoint['optim_dict'])
+
+    return checkpoint
+
+
+def set_seed(params):
+    """Fix random seed."""
+
+    random.seed(params.seed)
+    np.random.seed(params.seed)
+    torch.manual_seed(params.seed)
+
+    if params.cuda:
+        torch.cuda.manual_seed(params.seed)
+    if params.device_count > 1:
+        torch.cuda.manual_seed_all(params.seed)
+
+
+def reduce_tensor(tensor, args):
+    """average tensor with all GPU"""
+
+    rt = tensor.clone()
+    torch.distributed.all_reduce(rt, op=torch.distributed.ReduceOp.SUM)
+    rt /= args.world_size
+
+    return rt
+
+
+class DataPrefetcher:
+    """Optimize IO speed between CPU and GPU.
+
+    Example:
+    ```
+        prefetcher = DataPrefetcher(train_loader)
+        data_batch, label_batch = prefetcher.next()
+        while data_batch is not None:
+            do something
+    ```
+
+    """
+
+    def __init__(self, loader):
+        self.loader = iter(loader)
+        self.stream = torch.cuda.Stream()
+        self.mean = torch.tensor(
+            [0.485 * 255, 0.465 * 255, 0.406 * 255]).cuda().view(1, 3, 1, 1)
+        self.std = torch.tensor(
+            [0.229 * 255, 0.224 * 255, 0.225 * 255]).cuda().view(1, 3, 1, 1)
+        self.preload()
+
+    def preload(self):
+        try:
+            self.next_input, self.next_target = next(self.loader)
+        except StopInteration:
+            self.next_input = None
+            self.next_target = None
+
+            return
+
+        with torch.cuda.stream(self.stream):
+            self.next_input = self.next_input.cuda(non_blocking=True)
+            self.next_target = self.next_target.cuda(non_blocking=True)
+            self.next_input = self.next_input.float()
+            self.next_input = self.next_input.sub_(self.mean).div_(self.std)
+
+    def next(self):
+        torch.cuda.current_stream().wait_stream(self.stream)
+        input = self.next_input
+        target = self.next_target
+        self.preload()
+
+        return input, target

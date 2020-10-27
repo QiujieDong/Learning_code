@@ -11,8 +11,8 @@ import os
 
 import torch
 from torch.utils.data import Dataset, DataLoader
+import torchvision.transforms as transforms
 from PIL import Image
-from torchvision.transforms as transforms
 
 
 train_transformer = transforms.Compose([
@@ -46,7 +46,7 @@ class BaseDataset(Dataset):
         self.transform = transform
 
     def __len__(self):
-        return len(self, filenames)
+        return len(self.filenames)
 
     def __getitem__(self, idx):
         """Fetch index idx signal and labels from dataset. Perform transforms on image.

@@ -1,0 +1,18 @@
+{
+    "learning_rate": 3e-4,
+    "batch_size_pre_gpu": 64,
+    "device_count": 2,
+    "cuda": true,
+    "distributed": true,
+    "fp16": true,
+    "fp16_opt_level": "O1",
+    "keep_batchnorm_fp32": true,
+    "sync_bn": true,
+    "num_epochs": 30,
+    "dropout_rate": 0.4,
+    "num_channels": 32,
+    "save_summary_steps": 100,
+    "num_workers": 8,
+    "seed": 230,
+    "output_classes": 6
+}
