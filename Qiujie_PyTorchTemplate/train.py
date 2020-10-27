@@ -174,7 +174,7 @@ def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer, loss_
                                    'state_dict': model.state_dict(),
                                    'optim_dict': optimizer.state_dict()},
                                   is_best=is_best,
-                                  checkpoint=args.model_dir)
+                                  checkpoint_dir=args.model_dir)
             wandb.save("wandbModel.h5")  # test it
 
             if is_best:
@@ -187,7 +187,7 @@ def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer, loss_
                 utils.save_dict_to_json(val_metrics, last_json_path)
 
 
-if __neme__ = '__main__':
+if __name__ = '__main__':
 
     # load the parameters from the params.json file
     args = paraer.parse_args()
