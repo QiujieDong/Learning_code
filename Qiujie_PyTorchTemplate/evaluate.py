@@ -1,16 +1,9 @@
 """Evaluates the model using PyTorch."""
 
-import argparse
 import logging
-import os
-
-# use NVIDIA apex, calculate distributed data parallel, to achieve accelerate
-import apex
-from apex.parallel import DistributedDataParallel as DDP
 
 # use torch
 import torch
-import torch.backends.cudnn as cudnn  # automatic search convolution algorithm
 
 # use packages
 import numpy as np
@@ -19,19 +12,7 @@ import numpy as np
 import wandb  # replace logging with wandb
 
 # use extend packages
-import model.net as net
-import utils.data_loader as data_loader
 import utils.utils as utils
-
-parser = argparse.ArgumentParser()
-parser.add_argument('--dataset_dir', default='/data/SIGNS_data/64x64_SIGNS',
-                    help="Directory containing the dataset")
-parser.add_argument('--model_dir', default='experiments/base_model',
-                    help="Directory containing the params.json and checkpoints of train")
-parser.add_argument('--restore_weights', default=None,
-                    help="Optional (best of last), restore weights file in --model_dir before training")
-parser.add_argument('--local_rank', default=-1, type=int,
-                    help="Rank of the current process")
 
 
 def evaluate(model, loss_fn, dataloader, metrics, params, args):
@@ -95,80 +76,3 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
             "Test Loss": metrics_mean['loss']})
 
         return metrics_mean
-
-
-if __name__ == '__main__':
-    # load the parameters
-    args = parser.parse_args()
-    # load the parameters from the params.json file
-    args = parser.parse_args()
-    json_path = os.path.join(args.model_dir, 'params.json')
-    assert os.path.isfile(
-        json_path), "No json configuration file found at {}".format(json_path)
-
-    params = utils.Params(json_path)
-
-    # set the logger using wandb, login first
-    wandb.init(project="Qiujie_PyTorchTemplate_evaluate", config=params)
-
-    wandb.log("Evaluates the model using PyTorch.")
-
-    # Set random seed
-    wandb.log("Set random seed={}".format(params.seed))
-    utils.set_seed(params)
-    wandb.log("- done")
-
-    # Set device
-    device = None
-    if params.cude:
-        device = torch.device('cuda')
-        cudnn.benchmark = True  # Enable cudnn
-    else:
-        device = torch.device('cpu')
-    if params.distributed and params.device_count > 1 and params.cuda:
-        torch.cuda.set_device(args.lock_rank)
-        device = torch.device('cuda', args.lock_rank)
-        torch.distributed.init_process_group(backend="nccl")
-        args.world_size = torch.distributed.get_world_size()
-
-    args.device = device
-
-    # Create the input data pipeline
-    wandb.log("Creating the datasets...")
-    dataloaders, samplers = data_loader.fetch_dataloader(
-        ['test'], args.dataset_dir, params)
-    test_dataloader = dataloaders['test']
-    wandb.log("- done")
-
-    # Define the model
-    wandb.log("Define model...")
-    model = net.Net(params).to(args.device)
-
-    if params.sync_bn:
-        wandb.log("using apex synced BN")
-        model = apex.parallel.convert_syncbn_model(model)
-
-    if params.distributed and params.device_count > 1 and params.cuda:
-        wandb.log("- WARNING: Process rank: %s, device: %s, n_gpu: %s, distributed training: %s",
-                  args.lock_rank, device, params.device_count, bool(args.local_rank != -1))
-        model = DDP(model)
-
-    wandb.log("- done")
-
-    # fetch loss function and metrics
-    loss_fn = net.loss_fn(args)
-    metrics = net.metrics
-
-    # Reload weights from the saved file
-    utils.load_checkpoint(os.path.join(
-        args.model_dir, args.restore_weights + '.pth.tar'), args, model)
-
-    # Evaluate
-    test_metrics = evaluate(
-        model, loss_fn, test_dataloader, metrics, params, args)
-    save_path = os.path.join(
-        args.model_dir, "metrics_test_{}.json".format(args.restore_weights))
-
-    # Save on GPU#0
-    if args.local_rank in [-1, 0]:
-        utils.save_dict_to_json(test_metrics, save_path)
