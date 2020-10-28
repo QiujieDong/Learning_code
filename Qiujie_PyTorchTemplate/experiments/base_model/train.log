@@ -1388,3 +1388,1330 @@
 2020-10-27 21:36:17,433:INFO:- Found new best accuracy
 2020-10-27 21:36:17,434:INFO:Epoch 10/30
 2020-10-27 21:36:18,218:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.371
+2020-10-27 21:53:48,075:INFO:setting login settings: {}
+2020-10-27 21:53:49,699:INFO:Set random seed=230
+2020-10-27 21:53:49,701:INFO:- done
+2020-10-27 21:53:49,702:INFO:Loading the datasets...
+2020-10-27 21:53:49,707:INFO:- done
+2020-10-27 21:53:49,707:INFO:Define model and optimizer...
+2020-10-27 21:53:52,207:INFO:using apex synced BN
+2020-10-27 21:53:52,210:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 21:53:52,213:INFO:- done
+2020-10-27 21:53:52,213:INFO:Starting training for 30 epoch(s)
+2020-10-27 21:53:52,214:INFO:Epoch 1/30
+2020-10-27 21:53:53,365:INFO:- Train metrics: accuracy: 0.125 ; loss: 1.814
+2020-10-27 21:53:53,765:INFO:- Eval metrics : accuracy: 0.164 ; loss: 1.809
+2020-10-27 21:53:53,839:INFO:- Found new best accuracy
+2020-10-27 21:53:53,841:INFO:Epoch 2/30
+2020-10-27 21:53:54,576:INFO:- Train metrics: accuracy: 0.688 ; loss: 1.480
+2020-10-27 21:53:54,952:INFO:- Eval metrics : accuracy: 0.277 ; loss: 1.812
+2020-10-27 21:53:55,017:INFO:- Found new best accuracy
+2020-10-27 21:53:55,018:INFO:Epoch 3/30
+2020-10-27 21:53:55,745:INFO:- Train metrics: accuracy: 0.844 ; loss: 1.282
+2020-10-27 21:53:56,081:INFO:- Eval metrics : accuracy: 0.332 ; loss: 1.654
+2020-10-27 21:53:56,148:INFO:- Found new best accuracy
+2020-10-27 21:53:56,150:INFO:Epoch 4/30
+2020-10-27 21:53:56,917:INFO:- Train metrics: accuracy: 0.828 ; loss: 1.142
+2020-10-27 21:53:57,328:INFO:- Eval metrics : accuracy: 0.667 ; loss: 1.275
+2020-10-27 21:53:57,398:INFO:- Found new best accuracy
+2020-10-27 21:53:57,399:INFO:Epoch 5/30
+2020-10-27 21:53:58,179:INFO:- Train metrics: accuracy: 0.922 ; loss: 0.920
+2020-10-27 21:53:58,578:INFO:- Eval metrics : accuracy: 0.806 ; loss: 1.011
+2020-10-27 21:53:58,647:INFO:- Found new best accuracy
+2020-10-27 21:53:58,648:INFO:Epoch 6/30
+2020-10-27 21:53:59,401:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.764
+2020-10-27 21:53:59,808:INFO:- Eval metrics : accuracy: 0.909 ; loss: 0.799
+2020-10-27 21:53:59,880:INFO:- Found new best accuracy
+2020-10-27 21:53:59,881:INFO:Epoch 7/30
+2020-10-27 21:54:00,647:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.624
+2020-10-27 21:54:01,051:INFO:- Eval metrics : accuracy: 0.859 ; loss: 0.832
+2020-10-27 21:54:01,098:INFO:Epoch 8/30
+2020-10-27 21:54:01,848:INFO:- Train metrics: accuracy: 0.953 ; loss: 0.564
+2020-10-27 21:54:51,851:INFO:setting login settings: {}
+2020-10-27 21:54:55,455:INFO:Set random seed=230
+2020-10-27 21:54:55,460:INFO:- done
+2020-10-27 21:54:55,461:INFO:Loading the datasets...
+2020-10-27 21:54:55,477:INFO:- done
+2020-10-27 21:54:55,477:INFO:Define model and optimizer...
+2020-10-27 21:54:57,952:INFO:using apex synced BN
+2020-10-27 21:54:57,956:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 21:54:57,973:INFO:- done
+2020-10-27 21:54:57,974:INFO:Starting training for 30 epoch(s)
+2020-10-27 21:54:57,974:INFO:Epoch 1/30
+2020-10-27 21:57:34,307:INFO:setting login settings: {}
+2020-10-27 21:57:37,885:INFO:Set random seed=230
+2020-10-27 21:57:37,891:INFO:- done
+2020-10-27 21:57:37,892:INFO:Loading the datasets...
+2020-10-27 21:57:37,907:INFO:- done
+2020-10-27 21:57:37,907:INFO:Define model and optimizer...
+2020-10-27 21:57:40,444:INFO:using apex synced BN
+2020-10-27 21:57:40,448:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 21:57:40,465:INFO:- done
+2020-10-27 21:57:40,466:INFO:Starting training for 30 epoch(s)
+2020-10-27 21:57:40,466:INFO:Epoch 1/30
+2020-10-27 21:59:04,840:INFO:setting login settings: {}
+2020-10-27 21:59:08,541:INFO:Set random seed=230
+2020-10-27 21:59:08,546:INFO:- done
+2020-10-27 21:59:08,547:INFO:Loading the datasets...
+2020-10-27 21:59:08,562:INFO:- done
+2020-10-27 21:59:08,562:INFO:Define model and optimizer...
+2020-10-27 21:59:11,011:INFO:using apex synced BN
+2020-10-27 21:59:11,015:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 21:59:11,031:INFO:- done
+2020-10-27 21:59:11,032:INFO:Starting training for 30 epoch(s)
+2020-10-27 21:59:11,032:INFO:Epoch 1/30
+2020-10-27 21:59:45,425:INFO:setting login settings: {}
+2020-10-27 21:59:49,138:INFO:Set random seed=230
+2020-10-27 21:59:49,144:INFO:- done
+2020-10-27 21:59:49,145:INFO:Loading the datasets...
+2020-10-27 21:59:49,162:INFO:- done
+2020-10-27 21:59:49,162:INFO:Define model and optimizer...
+2020-10-27 21:59:51,554:INFO:using apex synced BN
+2020-10-27 21:59:51,559:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 21:59:51,573:INFO:- done
+2020-10-27 21:59:51,574:INFO:Starting training for 30 epoch(s)
+2020-10-27 21:59:51,574:INFO:Epoch 1/30
+2020-10-27 22:01:10,491:INFO:setting login settings: {}
+2020-10-27 22:01:14,076:INFO:Set random seed=230
+2020-10-27 22:01:14,084:INFO:- done
+2020-10-27 22:01:14,084:INFO:Loading the datasets...
+2020-10-27 22:01:14,100:INFO:- done
+2020-10-27 22:01:14,100:INFO:Define model and optimizer...
+2020-10-27 22:01:16,645:INFO:using apex synced BN
+2020-10-27 22:01:16,649:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:01:16,663:INFO:- done
+2020-10-27 22:01:16,664:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:01:16,665:INFO:Epoch 1/30
+2020-10-27 22:02:58,507:INFO:setting login settings: {}
+2020-10-27 22:03:00,201:INFO:Set random seed=230
+2020-10-27 22:03:00,204:INFO:- done
+2020-10-27 22:03:00,205:INFO:Loading the datasets...
+2020-10-27 22:03:00,215:INFO:- done
+2020-10-27 22:03:00,215:INFO:Define model and optimizer...
+2020-10-27 22:03:09,024:INFO:Internal process exited
+2020-10-27 22:03:15,477:INFO:setting login settings: {}
+2020-10-27 22:03:17,094:INFO:Set random seed=230
+2020-10-27 22:03:17,096:INFO:- done
+2020-10-27 22:03:17,096:INFO:Loading the datasets...
+2020-10-27 22:03:17,102:INFO:- done
+2020-10-27 22:03:17,102:INFO:Define model and optimizer...
+2020-10-27 22:03:19,530:INFO:using apex synced BN
+2020-10-27 22:03:19,533:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:03:19,538:INFO:- done
+2020-10-27 22:03:19,538:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:03:19,539:INFO:Epoch 1/30
+2020-10-27 22:03:31,084:INFO:setting login settings: {}
+2020-10-27 22:03:34,524:INFO:Set random seed=230
+2020-10-27 22:03:34,529:INFO:- done
+2020-10-27 22:03:34,531:INFO:Loading the datasets...
+2020-10-27 22:03:34,547:INFO:- done
+2020-10-27 22:03:34,548:INFO:Define model and optimizer...
+2020-10-27 22:03:36,945:INFO:using apex synced BN
+2020-10-27 22:03:36,949:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:03:36,964:INFO:- done
+2020-10-27 22:03:36,965:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:03:36,966:INFO:Epoch 1/30
+2020-10-27 22:10:10,374:INFO:setting login settings: {}
+2020-10-27 22:10:12,376:INFO:Set random seed=230
+2020-10-27 22:10:12,378:INFO:- done
+2020-10-27 22:10:12,379:INFO:Loading the datasets...
+2020-10-27 22:10:12,384:INFO:- done
+2020-10-27 22:10:12,384:INFO:Define model and optimizer...
+2020-10-27 22:10:14,803:INFO:using apex synced BN
+2020-10-27 22:10:14,805:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:10:14,810:INFO:- done
+2020-10-27 22:10:14,810:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:10:14,811:INFO:Epoch 1/30
+2020-10-27 22:10:16,036:INFO:- Train metrics: accuracy: 0.125 ; loss: 1.814
+2020-10-27 22:10:16,449:INFO:- Eval metrics : accuracy: 0.164 ; loss: 1.809
+2020-10-27 22:10:16,521:INFO:- Found new best accuracy
+2020-10-27 22:10:16,523:INFO:Epoch 2/30
+2020-10-27 22:10:17,253:INFO:- Train metrics: accuracy: 0.688 ; loss: 1.480
+2020-10-27 22:10:17,610:INFO:- Eval metrics : accuracy: 0.277 ; loss: 1.811
+2020-10-27 22:10:17,674:INFO:- Found new best accuracy
+2020-10-27 22:10:17,675:INFO:Epoch 3/30
+2020-10-27 22:17:06,366:INFO:setting login settings: {}
+2020-10-27 22:17:09,941:INFO:Set random seed=230
+2020-10-27 22:17:09,946:INFO:- done
+2020-10-27 22:17:09,947:INFO:Loading the datasets...
+2020-10-27 22:17:09,964:INFO:- done
+2020-10-27 22:17:09,964:INFO:Define model and optimizer...
+2020-10-27 22:17:12,588:INFO:using apex synced BN
+2020-10-27 22:17:12,593:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:17:12,607:INFO:- done
+2020-10-27 22:17:12,608:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:17:12,608:INFO:Epoch 1/30
+2020-10-27 22:30:29,013:INFO:setting login settings: {}
+2020-10-27 22:30:32,708:INFO:Set random seed=230
+2020-10-27 22:30:32,714:INFO:- done
+2020-10-27 22:30:32,715:INFO:Loading the datasets...
+2020-10-27 22:30:32,732:INFO:- done
+2020-10-27 22:30:32,733:INFO:Define model and optimizer...
+2020-10-27 22:30:35,366:INFO:using apex synced BN
+2020-10-27 22:30:35,371:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:30:35,386:INFO:- done
+2020-10-27 22:30:35,391:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:30:35,391:INFO:Epoch 1/30
+2020-10-27 22:32:51,423:INFO:setting login settings: {}
+2020-10-27 22:32:54,990:INFO:Set random seed=230
+2020-10-27 22:32:54,995:INFO:- done
+2020-10-27 22:32:54,996:INFO:Loading the datasets...
+2020-10-27 22:32:55,013:INFO:- done
+2020-10-27 22:32:55,013:INFO:Define model and optimizer...
+2020-10-27 22:32:57,735:INFO:using apex synced BN
+2020-10-27 22:32:57,740:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:32:57,758:INFO:- done
+2020-10-27 22:32:57,760:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:32:57,760:INFO:Epoch 1/30
+2020-10-27 22:42:25,121:INFO:setting login settings: {}
+2020-10-27 22:42:28,166:INFO:Set random seed=230
+2020-10-27 22:42:28,171:INFO:- done
+2020-10-27 22:42:28,172:INFO:Loading the datasets...
+2020-10-27 22:42:28,182:INFO:- done
+2020-10-27 22:42:28,182:INFO:Define model and optimizer...
+2020-10-27 22:42:30,658:INFO:using apex synced BN
+2020-10-27 22:42:30,662:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:42:30,672:INFO:- done
+2020-10-27 22:42:30,672:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:42:30,673:INFO:Epoch 1/30
+2020-10-27 22:46:48,216:INFO:setting login settings: {}
+2020-10-27 22:46:51,143:INFO:Set random seed=230
+2020-10-27 22:46:51,146:INFO:- done
+2020-10-27 22:46:51,147:INFO:Loading the datasets...
+2020-10-27 22:46:51,158:INFO:- done
+2020-10-27 22:46:51,158:INFO:Define model and optimizer...
+2020-10-27 22:46:53,719:INFO:using apex synced BN
+2020-10-27 22:46:53,723:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:46:53,738:INFO:- done
+2020-10-27 22:46:53,739:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:46:53,739:INFO:Epoch 1/30
+2020-10-27 22:47:33,463:INFO:- Train metrics: accuracy: 0.125 ; loss: 1.814
+2020-10-27 22:50:08,857:INFO:setting login settings: {}
+2020-10-27 22:50:08,959:INFO:setting login settings: {}
+2020-10-27 22:50:10,566:INFO:Set random seed=230
+2020-10-27 22:50:10,568:INFO:- done
+2020-10-27 22:50:10,574:INFO:Set random seed=230
+2020-10-27 22:50:10,576:INFO:- done
+2020-10-27 22:50:11,632:INFO:Loading the datasets...
+2020-10-27 22:50:11,638:INFO:Loading the datasets...
+2020-10-27 22:50:11,642:INFO:- done
+2020-10-27 22:50:11,642:INFO:Define model and optimizer...
+2020-10-27 22:50:11,647:INFO:- done
+2020-10-27 22:50:11,648:INFO:Define model and optimizer...
+2020-10-27 22:50:14,549:INFO:using apex synced BN
+2020-10-27 22:50:14,551:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:50:14,555:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 22:50:14,609:INFO:using apex synced BN
+2020-10-27 22:50:14,613:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:50:14,616:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 22:50:14,660:INFO:- done
+2020-10-27 22:50:14,660:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:50:14,661:INFO:Epoch 1/30
+2020-10-27 22:50:14,661:INFO:- done
+2020-10-27 22:50:14,661:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:50:14,661:INFO:Epoch 1/30
+2020-10-27 22:50:15,835:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 22:50:15,847:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 22:50:16,326:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 22:50:16,339:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 22:50:16,340:INFO:Epoch 2/30
+2020-10-27 22:50:16,389:INFO:- Found new best accuracy
+2020-10-27 22:50:16,390:INFO:Epoch 2/30
+2020-10-27 22:50:16,993:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 22:50:17,002:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 22:50:17,439:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 22:50:17,456:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 22:50:17,456:INFO:Epoch 3/30
+2020-10-27 22:50:17,485:INFO:Epoch 3/30
+2020-10-27 22:50:18,096:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 22:50:18,104:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 22:50:18,573:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-27 22:50:18,574:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-27 22:50:18,575:INFO:Epoch 4/30
+2020-10-27 22:50:18,640:INFO:- Found new best accuracy
+2020-10-27 22:50:18,641:INFO:Epoch 4/30
+2020-10-27 22:50:19,286:INFO:- Train metrics: accuracy: 0.828 ; loss: 1.318
+2020-10-27 22:50:19,297:INFO:- Train metrics: accuracy: 0.828 ; loss: 1.318
+2020-10-27 22:50:19,728:INFO:- Eval metrics : accuracy: 0.257 ; loss: 1.807
+2020-10-27 22:50:19,739:INFO:- Eval metrics : accuracy: 0.257 ; loss: 1.807
+2020-10-27 22:50:19,741:INFO:Epoch 5/30
+2020-10-27 22:50:19,794:INFO:- Found new best accuracy
+2020-10-27 22:50:19,795:INFO:Epoch 5/30
+2020-10-27 22:50:20,441:INFO:- Train metrics: accuracy: 0.875 ; loss: 1.193
+2020-10-27 22:50:20,442:INFO:- Train metrics: accuracy: 0.875 ; loss: 1.193
+2020-10-27 22:50:20,903:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 22:50:20,904:INFO:Epoch 6/30
+2020-10-27 22:50:20,907:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 22:50:20,977:INFO:- Found new best accuracy
+2020-10-27 22:50:20,978:INFO:Epoch 6/30
+2020-10-27 22:50:21,627:INFO:- Train metrics: accuracy: 0.906 ; loss: 1.079
+2020-10-27 22:50:21,632:INFO:- Train metrics: accuracy: 0.906 ; loss: 1.079
+2020-10-27 22:50:22,085:INFO:- Eval metrics : accuracy: 0.311 ; loss: 1.659
+2020-10-27 22:50:22,089:INFO:- Eval metrics : accuracy: 0.311 ; loss: 1.659
+2020-10-27 22:50:22,090:INFO:Epoch 7/30
+2020-10-27 22:50:22,155:INFO:- Found new best accuracy
+2020-10-27 22:50:22,156:INFO:Epoch 7/30
+2020-10-27 22:50:22,780:INFO:- Train metrics: accuracy: 0.930 ; loss: 0.990
+2020-10-27 22:50:22,792:INFO:- Train metrics: accuracy: 0.930 ; loss: 0.990
+2020-10-27 22:50:23,209:INFO:- Eval metrics : accuracy: 0.327 ; loss: 1.539
+2020-10-27 22:50:23,227:INFO:- Eval metrics : accuracy: 0.327 ; loss: 1.539
+2020-10-27 22:50:23,227:INFO:Epoch 8/30
+2020-10-27 22:50:23,273:INFO:- Found new best accuracy
+2020-10-27 22:50:23,274:INFO:Epoch 8/30
+2020-10-27 22:50:23,892:INFO:- Train metrics: accuracy: 0.961 ; loss: 0.924
+2020-10-27 22:50:23,897:INFO:- Train metrics: accuracy: 0.961 ; loss: 0.924
+2020-10-27 22:50:24,314:INFO:- Eval metrics : accuracy: 0.494 ; loss: 1.317
+2020-10-27 22:50:24,321:INFO:- Eval metrics : accuracy: 0.494 ; loss: 1.317
+2020-10-27 22:50:24,321:INFO:Epoch 9/30
+2020-10-27 22:50:24,379:INFO:- Found new best accuracy
+2020-10-27 22:50:24,380:INFO:Epoch 9/30
+2020-10-27 22:50:25,009:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.790
+2020-10-27 22:50:25,013:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.790
+2020-10-27 22:50:25,471:INFO:- Eval metrics : accuracy: 0.727 ; loss: 1.094
+2020-10-27 22:50:25,480:INFO:- Eval metrics : accuracy: 0.727 ; loss: 1.094
+2020-10-27 22:50:25,480:INFO:Epoch 10/30
+2020-10-27 22:50:25,540:INFO:- Found new best accuracy
+2020-10-27 22:50:25,541:INFO:Epoch 10/30
+2020-10-27 22:50:26,171:INFO:- Train metrics: accuracy: 0.969 ; loss: 0.748
+2020-10-27 22:50:26,198:INFO:- Train metrics: accuracy: 0.969 ; loss: 0.748
+2020-10-27 22:50:26,625:INFO:- Eval metrics : accuracy: 0.881 ; loss: 0.881
+2020-10-27 22:50:26,625:INFO:- Eval metrics : accuracy: 0.881 ; loss: 0.881
+2020-10-27 22:50:26,625:INFO:Epoch 11/30
+2020-10-27 22:50:26,696:INFO:- Found new best accuracy
+2020-10-27 22:50:26,697:INFO:Epoch 11/30
+2020-10-27 22:50:27,317:INFO:- Train metrics: accuracy: 0.977 ; loss: 0.630
+2020-10-27 22:50:27,324:INFO:- Train metrics: accuracy: 0.977 ; loss: 0.630
+2020-10-27 22:50:27,806:INFO:- Eval metrics : accuracy: 0.915 ; loss: 0.810
+2020-10-27 22:50:27,813:INFO:- Eval metrics : accuracy: 0.915 ; loss: 0.810
+2020-10-27 22:50:27,814:INFO:Epoch 12/30
+2020-10-27 22:50:27,871:INFO:- Found new best accuracy
+2020-10-27 22:50:27,872:INFO:Epoch 12/30
+2020-10-27 22:50:28,491:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.558
+2020-10-27 22:50:28,494:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.558
+2020-10-27 22:50:28,943:INFO:- Eval metrics : accuracy: 0.960 ; loss: 0.685
+2020-10-27 22:50:28,963:INFO:- Eval metrics : accuracy: 0.960 ; loss: 0.685
+2020-10-27 22:50:28,964:INFO:Epoch 13/30
+2020-10-27 22:50:29,011:INFO:- Found new best accuracy
+2020-10-27 22:50:29,012:INFO:Epoch 13/30
+2020-10-27 22:50:29,641:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.531
+2020-10-27 22:50:29,646:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.531
+2020-10-27 22:50:30,063:INFO:- Eval metrics : accuracy: 0.963 ; loss: 0.604
+2020-10-27 22:50:30,067:INFO:- Eval metrics : accuracy: 0.963 ; loss: 0.604
+2020-10-27 22:50:30,068:INFO:Epoch 14/30
+2020-10-27 22:50:30,129:INFO:- Found new best accuracy
+2020-10-27 22:50:30,130:INFO:Epoch 14/30
+2020-10-27 22:50:30,782:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.461
+2020-10-27 22:50:30,784:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.461
+2020-10-27 22:50:31,208:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.573
+2020-10-27 22:50:31,213:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.573
+2020-10-27 22:50:31,214:INFO:Epoch 15/30
+2020-10-27 22:50:31,279:INFO:- Found new best accuracy
+2020-10-27 22:50:31,281:INFO:Epoch 15/30
+2020-10-27 22:50:31,917:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.440
+2020-10-27 22:50:31,929:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.440
+2020-10-27 22:50:32,340:INFO:- Eval metrics : accuracy: 0.979 ; loss: 0.577
+2020-10-27 22:50:32,341:INFO:- Eval metrics : accuracy: 0.979 ; loss: 0.577
+2020-10-27 22:50:32,342:INFO:Epoch 16/30
+2020-10-27 22:50:32,405:INFO:- Found new best accuracy
+2020-10-27 22:50:32,406:INFO:Epoch 16/30
+2020-10-27 22:50:33,040:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.385
+2020-10-27 22:50:33,046:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.385
+2020-10-27 22:50:33,468:INFO:- Eval metrics : accuracy: 0.962 ; loss: 0.520
+2020-10-27 22:50:33,484:INFO:- Eval metrics : accuracy: 0.962 ; loss: 0.520
+2020-10-27 22:50:33,485:INFO:Epoch 17/30
+2020-10-27 22:50:33,516:INFO:Epoch 17/30
+2020-10-27 22:50:34,141:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.348
+2020-10-27 22:50:34,154:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.348
+2020-10-27 22:50:34,571:INFO:- Eval metrics : accuracy: 0.958 ; loss: 0.495
+2020-10-27 22:50:34,577:INFO:- Eval metrics : accuracy: 0.958 ; loss: 0.495
+2020-10-27 22:50:34,578:INFO:Epoch 18/30
+2020-10-27 22:50:34,620:INFO:Epoch 18/30
+2020-10-27 22:50:35,247:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.312
+2020-10-27 22:50:35,247:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.312
+2020-10-27 22:50:35,701:INFO:- Eval metrics : accuracy: 0.956 ; loss: 0.470
+2020-10-27 22:50:35,717:INFO:- Eval metrics : accuracy: 0.956 ; loss: 0.470
+2020-10-27 22:50:35,718:INFO:Epoch 19/30
+2020-10-27 22:50:35,761:INFO:Epoch 19/30
+2020-10-27 22:50:36,598:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.289
+2020-10-27 22:50:36,613:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.289
+2020-10-27 22:50:37,032:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.442
+2020-10-27 22:50:37,044:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.442
+2020-10-27 22:50:37,045:INFO:Epoch 20/30
+2020-10-27 22:50:37,080:INFO:Epoch 20/30
+2020-10-27 22:50:37,711:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.261
+2020-10-27 22:50:37,720:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.261
+2020-10-27 22:50:38,150:INFO:- Eval metrics : accuracy: 0.980 ; loss: 0.376
+2020-10-27 22:50:38,151:INFO:- Eval metrics : accuracy: 0.980 ; loss: 0.376
+2020-10-27 22:50:38,151:INFO:Epoch 21/30
+2020-10-27 22:50:38,215:INFO:- Found new best accuracy
+2020-10-27 22:50:38,216:INFO:Epoch 21/30
+2020-10-27 22:50:38,835:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.232
+2020-10-27 22:50:38,842:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.232
+2020-10-27 22:50:39,266:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.398
+2020-10-27 22:50:39,271:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.398
+2020-10-27 22:50:39,271:INFO:Epoch 22/30
+2020-10-27 22:50:39,337:INFO:Epoch 22/30
+2020-10-27 22:50:39,956:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.211
+2020-10-27 22:50:39,962:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.211
+2020-10-27 22:50:40,451:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.366
+2020-10-27 22:50:40,454:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.366
+2020-10-27 22:50:40,454:INFO:Epoch 23/30
+2020-10-27 22:50:40,508:INFO:Epoch 23/30
+2020-10-27 22:50:41,130:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.202
+2020-10-27 22:50:41,135:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.202
+2020-10-27 22:50:41,627:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.354
+2020-10-27 22:50:41,627:INFO:- Eval metrics : accuracy: 0.975 ; loss: 0.354
+2020-10-27 22:50:41,628:INFO:Epoch 24/30
+2020-10-27 22:50:41,676:INFO:Epoch 24/30
+2020-10-27 22:50:42,301:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.173
+2020-10-27 22:50:42,310:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.173
+2020-10-27 22:50:42,802:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.301
+2020-10-27 22:50:42,809:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.301
+2020-10-27 22:50:42,809:INFO:Epoch 25/30
+2020-10-27 22:50:42,851:INFO:Epoch 25/30
+2020-10-27 22:50:43,489:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.170
+2020-10-27 22:50:43,508:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.170
+2020-10-27 22:50:43,919:INFO:- Eval metrics : accuracy: 0.934 ; loss: 0.344
+2020-10-27 22:50:43,926:INFO:- Eval metrics : accuracy: 0.934 ; loss: 0.344
+2020-10-27 22:50:43,927:INFO:Epoch 26/30
+2020-10-27 22:50:43,964:INFO:Epoch 26/30
+2020-10-27 22:50:44,590:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.175
+2020-10-27 22:50:44,608:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.175
+2020-10-27 22:50:45,030:INFO:- Eval metrics : accuracy: 0.988 ; loss: 0.276
+2020-10-27 22:50:45,036:INFO:- Eval metrics : accuracy: 0.988 ; loss: 0.276
+2020-10-27 22:50:45,036:INFO:Epoch 27/30
+2020-10-27 22:50:45,100:INFO:- Found new best accuracy
+2020-10-27 22:50:45,101:INFO:Epoch 27/30
+2020-10-27 22:50:45,707:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.151
+2020-10-27 22:50:45,717:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.151
+2020-10-27 22:50:46,158:INFO:- Eval metrics : accuracy: 0.984 ; loss: 0.268
+2020-10-27 22:50:46,168:INFO:- Eval metrics : accuracy: 0.984 ; loss: 0.268
+2020-10-27 22:50:46,169:INFO:Epoch 28/30
+2020-10-27 22:50:46,221:INFO:Epoch 28/30
+2020-10-27 22:50:46,874:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.145
+2020-10-27 22:50:46,878:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.145
+2020-10-27 22:50:47,315:INFO:- Eval metrics : accuracy: 0.987 ; loss: 0.253
+2020-10-27 22:50:47,327:INFO:- Eval metrics : accuracy: 0.987 ; loss: 0.253
+2020-10-27 22:50:47,328:INFO:Epoch 29/30
+2020-10-27 22:50:47,363:INFO:Epoch 29/30
+2020-10-27 22:50:47,995:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.128
+2020-10-27 22:50:47,999:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.128
+2020-10-27 22:50:48,430:INFO:- Eval metrics : accuracy: 0.992 ; loss: 0.237
+2020-10-27 22:50:48,431:INFO:- Eval metrics : accuracy: 0.992 ; loss: 0.237
+2020-10-27 22:50:48,432:INFO:Epoch 30/30
+2020-10-27 22:50:48,494:INFO:- Found new best accuracy
+2020-10-27 22:50:48,496:INFO:Epoch 30/30
+2020-10-27 22:50:49,123:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.104
+2020-10-27 22:50:49,131:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.104
+2020-10-27 22:50:49,599:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.263
+2020-10-27 22:50:49,605:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.263
+2020-10-27 22:52:15,372:INFO:setting login settings: {}
+2020-10-27 22:52:18,192:INFO:Set random seed=230
+2020-10-27 22:52:18,194:INFO:- done
+2020-10-27 22:52:57,104:INFO:setting login settings: {}
+2020-10-27 22:52:59,780:INFO:Set random seed=230
+2020-10-27 22:52:59,783:INFO:- done
+2020-10-27 22:55:42,219:INFO:setting login settings: {}
+2020-10-27 22:55:44,968:INFO:Set random seed=230
+2020-10-27 22:55:44,971:INFO:- done
+2020-10-27 22:55:44,972:INFO:Loading the datasets...
+2020-10-27 22:55:44,982:INFO:- done
+2020-10-27 22:55:44,983:INFO:Define model and optimizer...
+2020-10-27 22:55:47,683:INFO:using apex synced BN
+2020-10-27 22:55:47,686:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 22:55:47,696:INFO:- done
+2020-10-27 22:55:47,697:INFO:Starting training for 30 epoch(s)
+2020-10-27 22:55:47,697:INFO:Epoch 1/30
+2020-10-27 22:55:50,033:INFO:- Train metrics: accuracy: 0.125 ; loss: 1.814
+2020-10-27 22:55:51,952:INFO:- Eval metrics : accuracy: 0.164 ; loss: 1.809
+2020-10-27 22:55:52,028:INFO:- Found new best accuracy
+2020-10-27 22:55:52,030:INFO:Epoch 2/30
+2020-10-27 22:56:35,978:INFO:setting login settings: {}
+2020-10-27 23:07:46,871:INFO:setting login settings: {}
+2020-10-27 23:07:46,897:INFO:setting login settings: {}
+2020-10-27 23:07:48,489:INFO:Set random seed=230
+2020-10-27 23:07:48,491:INFO:- done
+2020-10-27 23:07:48,532:INFO:Set random seed=230
+2020-10-27 23:07:48,534:INFO:- done
+2020-10-27 23:07:48,582:INFO:Loading the datasets...
+2020-10-27 23:07:48,588:INFO:Loading the datasets...
+2020-10-27 23:07:48,588:INFO:- done
+2020-10-27 23:07:48,588:INFO:Define model and optimizer...
+2020-10-27 23:07:48,598:INFO:- done
+2020-10-27 23:07:48,598:INFO:Define model and optimizer...
+2020-10-27 23:07:51,423:INFO:using apex synced BN
+2020-10-27 23:07:51,427:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:07:51,432:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:07:51,452:INFO:using apex synced BN
+2020-10-27 23:07:51,455:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:07:51,459:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:07:51,503:INFO:- done
+2020-10-27 23:07:51,503:INFO:Starting training for 30 epoch(s)
+2020-10-27 23:07:51,503:INFO:Epoch 1/30
+2020-10-27 23:07:51,504:INFO:- done
+2020-10-27 23:07:51,504:INFO:Starting training for 30 epoch(s)
+2020-10-27 23:07:51,504:INFO:Epoch 1/30
+2020-10-27 23:07:52,627:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:07:52,634:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:07:53,074:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:07:53,085:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:07:53,085:INFO:Epoch 2/30
+2020-10-27 23:07:53,141:INFO:- Found new best accuracy
+2020-10-27 23:07:53,142:INFO:Epoch 2/30
+2020-10-27 23:07:53,726:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:07:53,728:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:07:54,180:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:07:54,192:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:07:54,192:INFO:Epoch 3/30
+2020-10-27 23:07:54,226:INFO:Epoch 3/30
+2020-10-27 23:07:54,816:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 23:07:54,838:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 23:07:55,314:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.832
+2020-10-27 23:07:55,315:INFO:Epoch 4/30
+2020-10-27 23:07:55,319:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.832
+2020-10-27 23:07:55,364:INFO:Epoch 4/30
+2020-10-27 23:07:55,979:INFO:- Train metrics: accuracy: 0.836 ; loss: 1.318
+2020-10-27 23:07:55,979:INFO:- Train metrics: accuracy: 0.836 ; loss: 1.318
+2020-10-27 23:07:56,478:INFO:- Eval metrics : accuracy: 0.211 ; loss: 1.811
+2020-10-27 23:07:56,480:INFO:- Eval metrics : accuracy: 0.211 ; loss: 1.811
+2020-10-27 23:07:56,480:INFO:Epoch 5/30
+2020-10-27 23:07:56,541:INFO:- Found new best accuracy
+2020-10-27 23:07:56,542:INFO:Epoch 5/30
+2020-10-27 23:07:57,159:INFO:- Train metrics: accuracy: 0.875 ; loss: 1.194
+2020-10-27 23:07:57,160:INFO:- Train metrics: accuracy: 0.875 ; loss: 1.194
+2020-10-27 23:07:57,564:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.770
+2020-10-27 23:07:57,572:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.770
+2020-10-27 23:07:57,572:INFO:Epoch 6/30
+2020-10-27 23:07:57,632:INFO:- Found new best accuracy
+2020-10-27 23:07:57,633:INFO:Epoch 6/30
+2020-10-27 23:07:58,290:INFO:- Train metrics: accuracy: 0.898 ; loss: 1.077
+2020-10-27 23:07:58,295:INFO:- Train metrics: accuracy: 0.898 ; loss: 1.077
+2020-10-27 23:07:58,700:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.671
+2020-10-27 23:07:58,710:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.671
+2020-10-27 23:07:58,711:INFO:Epoch 7/30
+2020-10-27 23:07:58,762:INFO:Epoch 7/30
+2020-10-27 23:07:59,432:INFO:- Train metrics: accuracy: 0.914 ; loss: 0.990
+2020-10-27 23:07:59,438:INFO:- Train metrics: accuracy: 0.914 ; loss: 0.990
+2020-10-27 23:07:59,889:INFO:- Eval metrics : accuracy: 0.317 ; loss: 1.538
+2020-10-27 23:07:59,890:INFO:- Eval metrics : accuracy: 0.317 ; loss: 1.538
+2020-10-27 23:07:59,891:INFO:Epoch 8/30
+2020-10-27 23:07:59,957:INFO:- Found new best accuracy
+2020-10-27 23:07:59,958:INFO:Epoch 8/30
+2020-10-27 23:08:00,582:INFO:- Train metrics: accuracy: 0.945 ; loss: 0.923
+2020-10-27 23:08:00,585:INFO:- Train metrics: accuracy: 0.945 ; loss: 0.923
+2020-10-27 23:08:01,040:INFO:- Eval metrics : accuracy: 0.486 ; loss: 1.316
+2020-10-27 23:08:01,050:INFO:- Eval metrics : accuracy: 0.486 ; loss: 1.316
+2020-10-27 23:08:01,050:INFO:Epoch 9/30
+2020-10-27 23:08:01,114:INFO:- Found new best accuracy
+2020-10-27 23:08:01,115:INFO:Epoch 9/30
+2020-10-27 23:08:01,745:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.790
+2020-10-27 23:08:01,754:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.790
+2020-10-27 23:08:02,171:INFO:- Eval metrics : accuracy: 0.715 ; loss: 1.095
+2020-10-27 23:08:02,181:INFO:- Eval metrics : accuracy: 0.715 ; loss: 1.095
+2020-10-27 23:08:02,182:INFO:Epoch 10/30
+2020-10-27 23:08:02,237:INFO:- Found new best accuracy
+2020-10-27 23:08:02,239:INFO:Epoch 10/30
+2020-10-27 23:08:02,906:INFO:- Train metrics: accuracy: 0.969 ; loss: 0.747
+2020-10-27 23:08:02,906:INFO:- Train metrics: accuracy: 0.969 ; loss: 0.747
+2020-10-27 23:08:03,350:INFO:- Eval metrics : accuracy: 0.877 ; loss: 0.890
+2020-10-27 23:08:03,373:INFO:- Eval metrics : accuracy: 0.877 ; loss: 0.890
+2020-10-27 23:08:03,374:INFO:Epoch 11/30
+2020-10-27 23:08:03,430:INFO:- Found new best accuracy
+2020-10-27 23:08:03,432:INFO:Epoch 11/30
+2020-10-27 23:08:04,096:INFO:- Train metrics: accuracy: 0.977 ; loss: 0.632
+2020-10-27 23:08:04,099:INFO:- Train metrics: accuracy: 0.977 ; loss: 0.632
+2020-10-27 23:08:04,526:INFO:- Eval metrics : accuracy: 0.913 ; loss: 0.816
+2020-10-27 23:08:04,533:INFO:- Eval metrics : accuracy: 0.913 ; loss: 0.816
+2020-10-27 23:08:04,533:INFO:Epoch 12/30
+2020-10-27 23:08:04,591:INFO:- Found new best accuracy
+2020-10-27 23:08:04,592:INFO:Epoch 12/30
+2020-10-27 23:08:05,240:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.558
+2020-10-27 23:08:05,249:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.558
+2020-10-27 23:08:05,661:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.677
+2020-10-27 23:08:05,662:INFO:Epoch 13/30
+2020-10-27 23:08:05,664:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.677
+2020-10-27 23:08:05,736:INFO:- Found new best accuracy
+2020-10-27 23:08:05,738:INFO:Epoch 13/30
+2020-10-27 23:08:06,392:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.532
+2020-10-27 23:08:06,408:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.532
+2020-10-27 23:08:06,810:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.630
+2020-10-27 23:08:06,822:INFO:- Eval metrics : accuracy: 0.946 ; loss: 0.630
+2020-10-27 23:08:06,823:INFO:Epoch 14/30
+2020-10-27 23:08:06,864:INFO:Epoch 14/30
+2020-10-27 23:08:07,500:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.462
+2020-10-27 23:08:07,513:INFO:- Train metrics: accuracy: 0.984 ; loss: 0.462
+2020-10-27 23:08:07,925:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.563
+2020-10-27 23:08:07,930:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.563
+2020-10-27 23:08:07,930:INFO:Epoch 15/30
+2020-10-27 23:08:07,996:INFO:- Found new best accuracy
+2020-10-27 23:08:07,997:INFO:Epoch 15/30
+2020-10-27 23:08:08,639:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.440
+2020-10-27 23:08:08,643:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.440
+2020-10-27 23:08:09,089:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.561
+2020-10-27 23:08:09,093:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.561
+2020-10-27 23:08:09,095:INFO:Epoch 16/30
+2020-10-27 23:08:09,161:INFO:- Found new best accuracy
+2020-10-27 23:08:09,162:INFO:Epoch 16/30
+2020-10-27 23:08:09,800:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.376
+2020-10-27 23:08:09,804:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.376
+2020-10-27 23:08:10,241:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.500
+2020-10-27 23:08:10,245:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.500
+2020-10-27 23:08:10,245:INFO:Epoch 17/30
+2020-10-27 23:08:10,292:INFO:Epoch 17/30
+2020-10-27 23:08:10,947:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.340
+2020-10-27 23:08:10,955:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.340
+2020-10-27 23:08:11,370:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.468
+2020-10-27 23:08:11,376:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.468
+2020-10-27 23:08:11,377:INFO:Epoch 18/30
+2020-10-27 23:08:11,426:INFO:Epoch 18/30
+2020-10-27 23:08:12,072:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.310
+2020-10-27 23:08:12,073:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.310
+2020-10-27 23:08:12,503:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.442
+2020-10-27 23:08:12,516:INFO:- Eval metrics : accuracy: 0.971 ; loss: 0.442
+2020-10-27 23:08:12,516:INFO:Epoch 19/30
+2020-10-27 23:08:12,572:INFO:- Found new best accuracy
+2020-10-27 23:08:12,573:INFO:Epoch 19/30
+2020-10-27 23:08:13,370:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.285
+2020-10-27 23:08:13,372:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.285
+2020-10-27 23:08:13,817:INFO:- Eval metrics : accuracy: 0.936 ; loss: 0.462
+2020-10-27 23:08:13,819:INFO:- Eval metrics : accuracy: 0.936 ; loss: 0.462
+2020-10-27 23:08:13,819:INFO:Epoch 20/30
+2020-10-27 23:08:13,869:INFO:Epoch 20/30
+2020-10-27 23:08:14,524:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.262
+2020-10-27 23:08:14,528:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.262
+2020-10-27 23:08:14,951:INFO:- Eval metrics : accuracy: 0.984 ; loss: 0.372
+2020-10-27 23:08:14,951:INFO:- Eval metrics : accuracy: 0.984 ; loss: 0.372
+2020-10-27 23:08:14,952:INFO:Epoch 21/30
+2020-10-27 23:08:15,021:INFO:- Found new best accuracy
+2020-10-27 23:08:15,022:INFO:Epoch 21/30
+2020-10-27 23:08:15,688:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.234
+2020-10-27 23:08:15,708:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.234
+2020-10-27 23:08:16,118:INFO:- Eval metrics : accuracy: 0.958 ; loss: 0.394
+2020-10-27 23:08:16,119:INFO:Epoch 22/30
+2020-10-27 23:08:16,128:INFO:- Eval metrics : accuracy: 0.958 ; loss: 0.394
+2020-10-27 23:08:16,182:INFO:Epoch 22/30
+2020-10-27 23:08:16,836:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.215
+2020-10-27 23:08:16,843:INFO:- Train metrics: accuracy: 0.992 ; loss: 0.215
+2020-10-27 23:08:17,288:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.373
+2020-10-27 23:08:17,289:INFO:Epoch 23/30
+2020-10-27 23:08:17,289:INFO:- Eval metrics : accuracy: 0.965 ; loss: 0.373
+2020-10-27 23:08:17,340:INFO:Epoch 23/30
+2020-10-27 23:08:18,002:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.202
+2020-10-27 23:08:18,004:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.202
+2020-10-27 23:08:18,440:INFO:- Eval metrics : accuracy: 0.983 ; loss: 0.323
+2020-10-27 23:08:18,443:INFO:- Eval metrics : accuracy: 0.983 ; loss: 0.323
+2020-10-27 23:08:18,444:INFO:Epoch 24/30
+2020-10-27 23:08:18,491:INFO:Epoch 24/30
+2020-10-27 23:08:19,136:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.172
+2020-10-27 23:08:19,145:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.172
+2020-10-27 23:08:19,567:INFO:- Eval metrics : accuracy: 0.979 ; loss: 0.302
+2020-10-27 23:08:19,578:INFO:- Eval metrics : accuracy: 0.979 ; loss: 0.302
+2020-10-27 23:08:19,579:INFO:Epoch 25/30
+2020-10-27 23:08:19,619:INFO:Epoch 25/30
+2020-10-27 23:08:20,261:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.170
+2020-10-27 23:08:20,261:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.170
+2020-10-27 23:08:20,703:INFO:- Eval metrics : accuracy: 0.934 ; loss: 0.350
+2020-10-27 23:08:20,712:INFO:- Eval metrics : accuracy: 0.934 ; loss: 0.350
+2020-10-27 23:08:20,712:INFO:Epoch 26/30
+2020-10-27 23:08:20,750:INFO:Epoch 26/30
+2020-10-27 23:08:21,408:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.176
+2020-10-27 23:08:21,421:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.176
+2020-10-27 23:08:21,841:INFO:- Eval metrics : accuracy: 0.973 ; loss: 0.294
+2020-10-27 23:08:21,854:INFO:- Eval metrics : accuracy: 0.973 ; loss: 0.294
+2020-10-27 23:08:21,855:INFO:Epoch 27/30
+2020-10-27 23:08:21,896:INFO:Epoch 27/30
+2020-10-27 23:08:22,546:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.150
+2020-10-27 23:08:22,556:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.150
+2020-10-27 23:08:23,011:INFO:- Eval metrics : accuracy: 0.973 ; loss: 0.270
+2020-10-27 23:08:23,011:INFO:- Eval metrics : accuracy: 0.973 ; loss: 0.270
+2020-10-27 23:08:23,011:INFO:Epoch 28/30
+2020-10-27 23:08:23,060:INFO:Epoch 28/30
+2020-10-27 23:08:23,704:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.146
+2020-10-27 23:08:23,714:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.146
+2020-10-27 23:08:24,117:INFO:- Eval metrics : accuracy: 0.992 ; loss: 0.255
+2020-10-27 23:08:24,131:INFO:- Eval metrics : accuracy: 0.992 ; loss: 0.255
+2020-10-27 23:08:24,131:INFO:Epoch 29/30
+2020-10-27 23:08:24,184:INFO:- Found new best accuracy
+2020-10-27 23:08:24,185:INFO:Epoch 29/30
+2020-10-27 23:08:24,847:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.128
+2020-10-27 23:08:24,850:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.128
+2020-10-27 23:08:25,293:INFO:- Eval metrics : accuracy: 0.987 ; loss: 0.251
+2020-10-27 23:08:25,306:INFO:- Eval metrics : accuracy: 0.987 ; loss: 0.251
+2020-10-27 23:08:25,308:INFO:Epoch 30/30
+2020-10-27 23:08:25,352:INFO:Epoch 30/30
+2020-10-27 23:08:25,967:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.104
+2020-10-27 23:08:25,974:INFO:- Train metrics: accuracy: 1.000 ; loss: 0.104
+2020-10-27 23:08:26,419:INFO:- Eval metrics : accuracy: 0.977 ; loss: 0.249
+2020-10-27 23:08:26,431:INFO:- Eval metrics : accuracy: 0.977 ; loss: 0.249
+2020-10-27 23:11:50,283:INFO:setting login settings: {}
+2020-10-27 23:11:53,123:INFO:Set random seed=230
+2020-10-27 23:11:53,126:INFO:- done
+2020-10-27 23:12:15,734:INFO:setting login settings: {}
+2020-10-27 23:12:18,709:INFO:Set random seed=230
+2020-10-27 23:12:18,712:INFO:- done
+2020-10-27 23:12:18,713:INFO:Loading the datasets...
+2020-10-27 23:12:18,724:INFO:- done
+2020-10-27 23:12:18,724:INFO:Define model and optimizer...
+2020-10-27 23:12:21,306:INFO:using apex synced BN
+2020-10-27 23:12:21,310:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:12:21,319:INFO:- done
+2020-10-27 23:12:21,319:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:12:21,320:INFO:Epoch 1/5
+2020-10-27 23:14:40,860:INFO:- Train metrics: accuracy: 0.125 ; loss: 1.814
+2020-10-27 23:17:06,666:INFO:- Eval metrics : accuracy: 0.164 ; loss: 1.809
+2020-10-27 23:17:06,743:INFO:- Found new best accuracy
+2020-10-27 23:17:06,745:INFO:Epoch 2/5
+2020-10-27 23:17:09,109:INFO:- Train metrics: accuracy: 0.688 ; loss: 1.480
+2020-10-27 23:18:55,466:INFO:- Eval metrics : accuracy: 0.285 ; loss: 1.813
+2020-10-27 23:18:55,536:INFO:- Found new best accuracy
+2020-10-27 23:18:55,538:INFO:Epoch 3/5
+2020-10-27 23:18:57,839:INFO:- Train metrics: accuracy: 0.828 ; loss: 1.272
+2020-10-27 23:18:59,799:INFO:- Eval metrics : accuracy: 0.332 ; loss: 1.657
+2020-10-27 23:18:59,868:INFO:- Found new best accuracy
+2020-10-27 23:18:59,870:INFO:Epoch 4/5
+2020-10-27 23:19:02,455:INFO:- Train metrics: accuracy: 0.828 ; loss: 1.140
+2020-10-27 23:19:04,513:INFO:- Eval metrics : accuracy: 0.655 ; loss: 1.270
+2020-10-27 23:19:04,585:INFO:- Found new best accuracy
+2020-10-27 23:19:04,586:INFO:Epoch 5/5
+2020-10-27 23:19:06,919:INFO:- Train metrics: accuracy: 0.906 ; loss: 0.923
+2020-10-27 23:19:08,855:INFO:- Eval metrics : accuracy: 0.798 ; loss: 1.010
+2020-10-27 23:19:08,936:INFO:- Found new best accuracy
+2020-10-27 23:20:16,532:INFO:setting login settings: {}
+2020-10-27 23:20:16,533:INFO:setting login settings: {}
+2020-10-27 23:20:18,147:INFO:Set random seed=230
+2020-10-27 23:20:18,149:INFO:- done
+2020-10-27 23:20:18,158:INFO:Set random seed=230
+2020-10-27 23:20:18,160:INFO:- done
+2020-10-27 23:20:19,217:INFO:Loading the datasets...
+2020-10-27 23:20:19,226:INFO:Loading the datasets...
+2020-10-27 23:20:19,228:INFO:- done
+2020-10-27 23:20:19,228:INFO:Define model and optimizer...
+2020-10-27 23:20:19,237:INFO:- done
+2020-10-27 23:20:19,237:INFO:Define model and optimizer...
+2020-10-27 23:20:21,956:INFO:using apex synced BN
+2020-10-27 23:20:21,959:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:20:21,963:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:20:22,019:INFO:using apex synced BN
+2020-10-27 23:20:22,023:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:20:22,033:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:20:22,079:INFO:- done
+2020-10-27 23:20:22,079:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:20:22,079:INFO:Epoch 1/5
+2020-10-27 23:20:22,079:INFO:- done
+2020-10-27 23:20:22,080:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:20:22,080:INFO:Epoch 1/5
+2020-10-27 23:20:23,211:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:20:23,232:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:20:23,637:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 23:20:23,655:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 23:20:23,656:INFO:Epoch 2/5
+2020-10-27 23:20:23,706:INFO:- Found new best accuracy
+2020-10-27 23:20:23,708:INFO:Epoch 2/5
+2020-10-27 23:20:24,295:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 23:20:24,320:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 23:20:24,704:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:20:24,723:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:20:24,724:INFO:Epoch 3/5
+2020-10-27 23:20:24,754:INFO:Epoch 3/5
+2020-10-27 23:20:25,328:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-27 23:20:25,338:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-27 23:20:25,729:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.829
+2020-10-27 23:20:25,748:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.829
+2020-10-27 23:20:25,748:INFO:Epoch 4/5
+2020-10-27 23:20:25,778:INFO:Epoch 4/5
+2020-10-27 23:20:26,356:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-27 23:20:26,373:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-27 23:20:26,822:INFO:- Eval metrics : accuracy: 0.242 ; loss: 1.808
+2020-10-27 23:20:26,841:INFO:- Eval metrics : accuracy: 0.242 ; loss: 1.808
+2020-10-27 23:20:26,842:INFO:Epoch 5/5
+2020-10-27 23:20:26,890:INFO:- Found new best accuracy
+2020-10-27 23:20:26,891:INFO:Epoch 5/5
+2020-10-27 23:20:27,489:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.193
+2020-10-27 23:20:27,516:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.193
+2020-10-27 23:20:27,905:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.767
+2020-10-27 23:20:27,922:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.767
+2020-10-27 23:20:27,976:INFO:- Found new best accuracy
+2020-10-27 23:24:50,137:INFO:setting login settings: {}
+2020-10-27 23:24:50,144:INFO:setting login settings: {}
+2020-10-27 23:24:51,713:INFO:Set random seed=230
+2020-10-27 23:24:51,716:INFO:- done
+2020-10-27 23:24:51,724:INFO:Set random seed=230
+2020-10-27 23:24:51,726:INFO:- done
+2020-10-27 23:24:52,780:INFO:Loading the datasets...
+2020-10-27 23:24:52,788:INFO:Loading the datasets...
+2020-10-27 23:24:52,791:INFO:- done
+2020-10-27 23:24:52,791:INFO:Define model and optimizer...
+2020-10-27 23:24:52,798:INFO:- done
+2020-10-27 23:24:52,799:INFO:Define model and optimizer...
+2020-10-27 23:24:55,676:INFO:using apex synced BN
+2020-10-27 23:24:55,681:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:24:55,688:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:24:55,714:INFO:using apex synced BN
+2020-10-27 23:24:55,717:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:24:55,721:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:24:55,763:INFO:- done
+2020-10-27 23:24:55,763:INFO:- done
+2020-10-27 23:24:55,763:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:24:55,763:INFO:Epoch 1/5
+2020-10-27 23:24:55,763:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:24:55,763:INFO:Epoch 1/5
+2020-10-27 23:24:56,948:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:24:56,949:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:24:57,444:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-27 23:24:57,445:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-27 23:24:57,446:INFO:Epoch 2/5
+2020-10-27 23:24:57,517:INFO:- Found new best accuracy
+2020-10-27 23:24:57,518:INFO:Epoch 2/5
+2020-10-27 23:24:58,131:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:24:58,136:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:24:58,564:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:24:58,565:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:24:58,565:INFO:Epoch 3/5
+2020-10-27 23:24:58,613:INFO:Epoch 3/5
+2020-10-27 23:24:59,315:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 23:24:59,315:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-27 23:24:59,765:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.830
+2020-10-27 23:24:59,766:INFO:Epoch 4/5
+2020-10-27 23:24:59,768:INFO:- Eval metrics : accuracy: 0.175 ; loss: 1.830
+2020-10-27 23:24:59,823:INFO:Epoch 4/5
+2020-10-27 23:25:00,453:INFO:- Train metrics: accuracy: 0.812 ; loss: 1.318
+2020-10-27 23:25:00,464:INFO:- Train metrics: accuracy: 0.812 ; loss: 1.318
+2020-10-27 23:25:00,903:INFO:- Eval metrics : accuracy: 0.257 ; loss: 1.805
+2020-10-27 23:25:00,904:INFO:- Eval metrics : accuracy: 0.257 ; loss: 1.805
+2020-10-27 23:25:00,904:INFO:Epoch 5/5
+2020-10-27 23:25:00,970:INFO:- Found new best accuracy
+2020-10-27 23:25:00,971:INFO:Epoch 5/5
+2020-10-27 23:25:01,598:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.193
+2020-10-27 23:25:01,599:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.193
+2020-10-27 23:25:02,034:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 23:25:02,034:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 23:25:02,103:INFO:- Found new best accuracy
+2020-10-27 23:26:04,533:INFO:setting login settings: {}
+2020-10-27 23:26:04,548:INFO:setting login settings: {}
+2020-10-27 23:26:06,251:INFO:Set random seed=230
+2020-10-27 23:26:06,253:INFO:- done
+2020-10-27 23:26:06,302:INFO:Set random seed=230
+2020-10-27 23:26:06,304:INFO:- done
+2020-10-27 23:26:07,307:INFO:Loading the datasets...
+2020-10-27 23:26:07,311:INFO:Loading the datasets...
+2020-10-27 23:26:07,318:INFO:- done
+2020-10-27 23:26:07,318:INFO:Define model and optimizer...
+2020-10-27 23:26:07,320:INFO:- done
+2020-10-27 23:26:07,321:INFO:Define model and optimizer...
+2020-10-27 23:26:10,046:INFO:using apex synced BN
+2020-10-27 23:26:10,049:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:26:10,057:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:26:10,082:INFO:using apex synced BN
+2020-10-27 23:26:10,085:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:26:10,090:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:26:10,135:INFO:- done
+2020-10-27 23:26:10,136:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:26:10,136:INFO:- done
+2020-10-27 23:26:10,136:INFO:Epoch 1/5
+2020-10-27 23:26:10,136:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:26:10,136:INFO:Epoch 1/5
+2020-10-27 23:26:11,313:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:26:11,321:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:26:11,705:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 23:26:11,727:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-27 23:26:11,729:INFO:Epoch 2/5
+2020-10-27 23:26:11,772:INFO:- Found new best accuracy
+2020-10-27 23:26:11,773:INFO:Epoch 2/5
+2020-10-27 23:26:12,322:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:26:12,349:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:26:12,740:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:26:12,755:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:26:12,756:INFO:Epoch 3/5
+2020-10-27 23:26:12,786:INFO:Epoch 3/5
+2020-10-27 23:26:13,417:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.406
+2020-10-27 23:26:13,444:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.406
+2020-10-27 23:26:13,841:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:26:13,863:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:26:13,864:INFO:Epoch 4/5
+2020-10-27 23:26:13,906:INFO:- Found new best accuracy
+2020-10-27 23:26:13,907:INFO:Epoch 4/5
+2020-10-27 23:26:14,480:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-27 23:26:14,500:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-27 23:26:14,885:INFO:- Eval metrics : accuracy: 0.228 ; loss: 1.809
+2020-10-27 23:26:14,901:INFO:- Eval metrics : accuracy: 0.228 ; loss: 1.809
+2020-10-27 23:26:14,902:INFO:Epoch 5/5
+2020-10-27 23:26:14,947:INFO:- Found new best accuracy
+2020-10-27 23:26:14,948:INFO:Epoch 5/5
+2020-10-27 23:26:15,512:INFO:- Train metrics: accuracy: 0.852 ; loss: 1.192
+2020-10-27 23:26:15,532:INFO:- Train metrics: accuracy: 0.852 ; loss: 1.192
+2020-10-27 23:26:15,913:INFO:- Eval metrics : accuracy: 0.276 ; loss: 1.769
+2020-10-27 23:26:15,932:INFO:- Eval metrics : accuracy: 0.276 ; loss: 1.769
+2020-10-27 23:26:15,981:INFO:- Found new best accuracy
+2020-10-27 23:27:22,285:INFO:setting login settings: {}
+2020-10-27 23:27:22,287:INFO:setting login settings: {}
+2020-10-27 23:27:23,833:INFO:Set random seed=230
+2020-10-27 23:27:23,834:INFO:- done
+2020-10-27 23:27:23,930:INFO:Set random seed=230
+2020-10-27 23:27:23,932:INFO:- done
+2020-10-27 23:27:24,895:INFO:Loading the datasets...
+2020-10-27 23:27:24,904:INFO:Loading the datasets...
+2020-10-27 23:27:24,906:INFO:- done
+2020-10-27 23:27:24,906:INFO:Define model and optimizer...
+2020-10-27 23:27:24,914:INFO:- done
+2020-10-27 23:27:24,914:INFO:Define model and optimizer...
+2020-10-27 23:27:27,775:INFO:using apex synced BN
+2020-10-27 23:27:27,778:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:27:27,783:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:27:27,823:INFO:using apex synced BN
+2020-10-27 23:27:27,825:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:27:27,828:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:27:27,871:INFO:- done
+2020-10-27 23:27:27,871:INFO:- done
+2020-10-27 23:27:27,871:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:27:27,871:INFO:Epoch 1/5
+2020-10-27 23:27:27,872:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:27:27,872:INFO:Epoch 1/5
+2020-10-27 23:27:29,009:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:27:29,011:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:27:29,480:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:27:29,492:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:27:29,492:INFO:Epoch 2/5
+2020-10-27 23:27:29,547:INFO:- Found new best accuracy
+2020-10-27 23:27:29,548:INFO:Epoch 2/5
+2020-10-27 23:27:30,221:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 23:27:30,230:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-27 23:27:30,696:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:27:30,696:INFO:Epoch 3/5
+2020-10-27 23:27:30,700:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:27:30,751:INFO:Epoch 3/5
+2020-10-27 23:27:31,371:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-27 23:27:31,372:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-27 23:27:31,864:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:27:31,864:INFO:Epoch 4/5
+2020-10-27 23:27:31,867:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:27:31,916:INFO:Epoch 4/5
+2020-10-27 23:27:32,548:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-27 23:27:32,548:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-27 23:27:33,014:INFO:- Eval metrics : accuracy: 0.251 ; loss: 1.806
+2020-10-27 23:27:33,017:INFO:- Eval metrics : accuracy: 0.251 ; loss: 1.806
+2020-10-27 23:27:33,018:INFO:Epoch 5/5
+2020-10-27 23:27:33,081:INFO:- Found new best accuracy
+2020-10-27 23:27:33,082:INFO:Epoch 5/5
+2020-10-27 23:27:33,772:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.193
+2020-10-27 23:27:33,773:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.193
+2020-10-27 23:27:34,242:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 23:27:34,243:INFO:- Eval metrics : accuracy: 0.292 ; loss: 1.764
+2020-10-27 23:27:34,324:INFO:- Found new best accuracy
+2020-10-27 23:37:16,801:INFO:setting login settings: {}
+2020-10-27 23:37:16,820:INFO:setting login settings: {}
+2020-10-27 23:37:18,450:INFO:Set random seed=230
+2020-10-27 23:37:18,452:INFO:- done
+2020-10-27 23:37:18,464:INFO:Set random seed=230
+2020-10-27 23:37:18,466:INFO:- done
+2020-10-27 23:37:18,518:INFO:Loading the datasets...
+2020-10-27 23:37:18,524:INFO:- done
+2020-10-27 23:37:18,524:INFO:Define model and optimizer...
+2020-10-27 23:37:18,524:INFO:Loading the datasets...
+2020-10-27 23:37:18,533:INFO:- done
+2020-10-27 23:37:18,533:INFO:Define model and optimizer...
+2020-10-27 23:37:21,219:INFO:using apex synced BN
+2020-10-27 23:37:21,222:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:37:21,226:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:37:21,264:INFO:using apex synced BN
+2020-10-27 23:37:21,268:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:37:21,278:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:37:21,325:INFO:- done
+2020-10-27 23:37:21,326:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:37:21,326:INFO:Epoch 1/5
+2020-10-27 23:37:21,326:INFO:- done
+2020-10-27 23:37:21,327:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:37:21,327:INFO:Epoch 1/5
+2020-10-27 23:37:55,101:INFO:setting login settings: {}
+2020-10-27 23:37:55,198:INFO:setting login settings: {}
+2020-10-27 23:37:56,699:INFO:Set random seed=230
+2020-10-27 23:37:56,701:INFO:- done
+2020-10-27 23:37:56,851:INFO:Set random seed=230
+2020-10-27 23:37:56,853:INFO:- done
+2020-10-27 23:37:56,870:INFO:Loading the datasets...
+2020-10-27 23:37:56,870:INFO:Loading the datasets...
+2020-10-27 23:37:56,880:INFO:- done
+2020-10-27 23:37:56,880:INFO:Define model and optimizer...
+2020-10-27 23:37:56,881:INFO:- done
+2020-10-27 23:37:56,881:INFO:Define model and optimizer...
+2020-10-27 23:37:59,759:INFO:using apex synced BN
+2020-10-27 23:37:59,762:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:37:59,765:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-27 23:37:59,803:INFO:using apex synced BN
+2020-10-27 23:37:59,806:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-27 23:37:59,810:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-27 23:37:59,854:INFO:- done
+2020-10-27 23:37:59,854:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:37:59,854:INFO:Epoch 1/5
+2020-10-27 23:37:59,855:INFO:- done
+2020-10-27 23:37:59,855:INFO:Starting training for 5 epoch(s)
+2020-10-27 23:37:59,855:INFO:Epoch 1/5
+2020-10-27 23:38:00,984:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:38:00,985:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-27 23:38:01,465:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:38:01,466:INFO:Epoch 2/5
+2020-10-27 23:38:01,468:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-27 23:38:01,542:INFO:- Found new best accuracy
+2020-10-27 23:38:01,544:INFO:Epoch 2/5
+2020-10-27 23:38:02,174:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:38:02,175:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-27 23:38:02,628:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:38:02,629:INFO:Epoch 3/5
+2020-10-27 23:38:02,630:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-27 23:38:02,678:INFO:Epoch 3/5
+2020-10-27 23:38:03,318:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.406
+2020-10-27 23:38:03,322:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.406
+2020-10-27 23:38:03,742:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:38:03,743:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-27 23:38:03,744:INFO:Epoch 4/5
+2020-10-27 23:38:03,789:INFO:Epoch 4/5
+2020-10-27 23:38:04,432:INFO:- Train metrics: accuracy: 0.812 ; loss: 1.319
+2020-10-27 23:38:04,441:INFO:- Train metrics: accuracy: 0.812 ; loss: 1.319
+2020-10-27 23:38:04,928:INFO:- Eval metrics : accuracy: 0.232 ; loss: 1.809
+2020-10-27 23:38:04,929:INFO:- Eval metrics : accuracy: 0.232 ; loss: 1.809
+2020-10-27 23:38:04,929:INFO:Epoch 5/5
+2020-10-27 23:38:04,992:INFO:- Found new best accuracy
+2020-10-27 23:38:04,993:INFO:Epoch 5/5
+2020-10-27 23:38:05,612:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.192
+2020-10-27 23:38:05,614:INFO:- Train metrics: accuracy: 0.867 ; loss: 1.192
+2020-10-27 23:38:06,048:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.772
+2020-10-27 23:38:06,052:INFO:- Eval metrics : accuracy: 0.269 ; loss: 1.772
+2020-10-27 23:38:06,110:INFO:- Found new best accuracy
+2020-10-28 09:33:25,782:INFO:setting login settings: {}
+2020-10-28 09:33:25,816:INFO:setting login settings: {}
+2020-10-28 09:33:27,401:INFO:Set random seed=230
+2020-10-28 09:33:27,403:INFO:- done
+2020-10-28 09:33:28,983:INFO:Set random seed=230
+2020-10-28 09:33:28,984:INFO:- done
+2020-10-28 09:33:29,465:INFO:Loading the datasets...
+2020-10-28 09:33:29,473:INFO:Loading the datasets...
+2020-10-28 09:33:29,476:INFO:- done
+2020-10-28 09:33:29,476:INFO:Define model and optimizer...
+2020-10-28 09:33:29,483:INFO:- done
+2020-10-28 09:33:29,483:INFO:Define model and optimizer...
+2020-10-28 09:33:32,369:INFO:using apex synced BN
+2020-10-28 09:33:32,373:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:33:32,381:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 09:33:32,391:INFO:using apex synced BN
+2020-10-28 09:33:32,394:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:33:32,397:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 09:33:32,443:INFO:- done
+2020-10-28 09:33:32,443:INFO:- done
+2020-10-28 09:33:32,443:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:33:32,443:INFO:Epoch 1/5
+2020-10-28 09:33:32,443:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:33:32,443:INFO:Epoch 1/5
+2020-10-28 09:33:33,583:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:33:33,588:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:33:34,052:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-28 09:33:34,057:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-28 09:33:34,057:INFO:Epoch 2/5
+2020-10-28 09:33:34,123:INFO:- Found new best accuracy
+2020-10-28 09:33:34,124:INFO:Epoch 2/5
+2020-10-28 09:33:34,767:INFO:- Train metrics: accuracy: 0.750 ; loss: 1.543
+2020-10-28 09:33:34,769:INFO:- Train metrics: accuracy: 0.750 ; loss: 1.543
+2020-10-28 09:33:35,222:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:33:35,223:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:33:35,224:INFO:Epoch 3/5
+2020-10-28 09:33:35,271:INFO:Epoch 3/5
+2020-10-28 09:33:35,905:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-28 09:33:35,908:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.405
+2020-10-28 09:33:36,380:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-28 09:33:36,381:INFO:Epoch 4/5
+2020-10-28 09:33:36,381:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-28 09:33:36,447:INFO:- Found new best accuracy
+2020-10-28 09:33:36,448:INFO:Epoch 4/5
+2020-10-28 09:33:37,083:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 09:33:37,085:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 09:33:37,534:INFO:- Eval metrics : accuracy: 0.253 ; loss: 1.806
+2020-10-28 09:33:37,535:INFO:Epoch 5/5
+2020-10-28 09:33:37,539:INFO:- Eval metrics : accuracy: 0.253 ; loss: 1.806
+2020-10-28 09:33:37,674:INFO:- Found new best accuracy
+2020-10-28 09:33:37,675:INFO:Epoch 5/5
+2020-10-28 09:33:38,326:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.193
+2020-10-28 09:33:38,334:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.193
+2020-10-28 09:33:38,830:INFO:- Eval metrics : accuracy: 0.286 ; loss: 1.765
+2020-10-28 09:33:38,832:INFO:- Eval metrics : accuracy: 0.286 ; loss: 1.765
+2020-10-28 09:33:38,909:INFO:- Found new best accuracy
+2020-10-28 09:36:48,370:INFO:setting login settings: {}
+2020-10-28 09:36:48,427:INFO:setting login settings: {}
+2020-10-28 09:36:51,488:INFO:Set random seed=230
+2020-10-28 09:36:51,490:INFO:- done
+2020-10-28 09:36:51,591:INFO:Set random seed=230
+2020-10-28 09:36:51,593:INFO:- done
+2020-10-28 09:36:51,604:INFO:Loading the datasets...
+2020-10-28 09:36:51,612:INFO:Loading the datasets...
+2020-10-28 09:36:51,614:INFO:- done
+2020-10-28 09:36:51,614:INFO:Define model and optimizer...
+2020-10-28 09:36:51,623:INFO:- done
+2020-10-28 09:36:51,623:INFO:Define model and optimizer...
+2020-10-28 09:36:54,282:INFO:using apex synced BN
+2020-10-28 09:36:54,284:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:36:54,286:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 09:36:54,334:INFO:using apex synced BN
+2020-10-28 09:36:54,336:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:36:54,340:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 09:36:54,385:INFO:- done
+2020-10-28 09:36:54,385:INFO:- done
+2020-10-28 09:36:54,385:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:36:54,385:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:36:54,385:INFO:Epoch 1/5
+2020-10-28 09:36:54,385:INFO:Epoch 1/5
+2020-10-28 09:36:55,562:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:36:55,579:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:36:56,044:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-28 09:36:56,045:INFO:Epoch 2/5
+2020-10-28 09:36:56,050:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-28 09:36:56,119:INFO:- Found new best accuracy
+2020-10-28 09:36:56,120:INFO:Epoch 2/5
+2020-10-28 09:36:56,729:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-28 09:36:56,736:INFO:- Train metrics: accuracy: 0.742 ; loss: 1.543
+2020-10-28 09:36:57,142:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:36:57,144:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:36:57,145:INFO:Epoch 3/5
+2020-10-28 09:36:57,187:INFO:Epoch 3/5
+2020-10-28 09:36:57,795:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-28 09:36:57,797:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-28 09:36:58,199:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-28 09:36:58,204:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.830
+2020-10-28 09:36:58,204:INFO:Epoch 4/5
+2020-10-28 09:36:58,248:INFO:Epoch 4/5
+2020-10-28 09:36:58,863:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 09:36:58,863:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 09:36:59,284:INFO:- Eval metrics : accuracy: 0.242 ; loss: 1.809
+2020-10-28 09:36:59,289:INFO:- Eval metrics : accuracy: 0.242 ; loss: 1.809
+2020-10-28 09:36:59,290:INFO:Epoch 5/5
+2020-10-28 09:36:59,353:INFO:- Found new best accuracy
+2020-10-28 09:36:59,354:INFO:Epoch 5/5
+2020-10-28 09:36:59,953:INFO:- Train metrics: accuracy: 0.852 ; loss: 1.192
+2020-10-28 09:36:59,959:INFO:- Train metrics: accuracy: 0.852 ; loss: 1.192
+2020-10-28 09:37:00,365:INFO:- Eval metrics : accuracy: 0.286 ; loss: 1.768
+2020-10-28 09:37:00,370:INFO:- Eval metrics : accuracy: 0.286 ; loss: 1.768
+2020-10-28 09:37:00,430:INFO:- Found new best accuracy
+2020-10-28 09:49:31,700:INFO:setting login settings: {}
+2020-10-28 09:49:31,769:INFO:setting login settings: {}
+2020-10-28 09:49:34,667:INFO:Set random seed=230
+2020-10-28 09:49:34,668:INFO:- done
+2020-10-28 09:49:34,832:INFO:Set random seed=230
+2020-10-28 09:49:34,833:INFO:- done
+2020-10-28 09:49:34,844:INFO:Loading the datasets...
+2020-10-28 09:49:34,849:INFO:- done
+2020-10-28 09:49:34,849:INFO:Define model and optimizer...
+2020-10-28 09:49:34,851:INFO:Loading the datasets...
+2020-10-28 09:49:34,861:INFO:- done
+2020-10-28 09:49:34,861:INFO:Define model and optimizer...
+2020-10-28 09:49:37,663:INFO:using apex synced BN
+2020-10-28 09:49:37,665:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:49:37,669:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 09:49:37,751:INFO:using apex synced BN
+2020-10-28 09:49:37,753:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:49:37,761:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 09:49:37,812:INFO:- done
+2020-10-28 09:49:37,813:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:49:37,813:INFO:Epoch 1/5
+2020-10-28 09:49:37,813:INFO:- done
+2020-10-28 09:49:37,813:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:49:37,813:INFO:Epoch 1/5
+2020-10-28 09:49:38,903:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:49:38,909:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:49:39,295:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-28 09:49:39,300:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.790
+2020-10-28 09:49:39,363:INFO:- Found new best accuracy
+2020-10-28 09:51:47,556:INFO:setting login settings: {}
+2020-10-28 09:51:47,591:INFO:setting login settings: {}
+2020-10-28 09:51:50,647:INFO:Set random seed=230
+2020-10-28 09:51:50,648:INFO:- done
+2020-10-28 09:51:50,674:INFO:Set random seed=230
+2020-10-28 09:51:50,675:INFO:- done
+2020-10-28 09:51:50,704:INFO:Loading the datasets...
+2020-10-28 09:51:50,710:INFO:- done
+2020-10-28 09:51:50,710:INFO:Define model and optimizer...
+2020-10-28 09:51:50,710:INFO:Loading the datasets...
+2020-10-28 09:51:50,720:INFO:- done
+2020-10-28 09:51:50,720:INFO:Define model and optimizer...
+2020-10-28 09:51:53,446:INFO:using apex synced BN
+2020-10-28 09:51:53,449:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:51:53,452:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 09:51:53,492:INFO:using apex synced BN
+2020-10-28 09:51:53,495:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:51:53,499:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 09:51:53,543:INFO:- done
+2020-10-28 09:51:53,543:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:51:53,543:INFO:Epoch 1/5
+2020-10-28 09:51:53,543:INFO:- done
+2020-10-28 09:51:53,544:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:51:53,544:INFO:Epoch 1/5
+2020-10-28 09:51:54,753:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:51:54,762:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:51:55,246:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-28 09:51:55,249:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-28 09:51:55,315:INFO:- Found new best accuracy
+2020-10-28 09:55:47,140:INFO:setting login settings: {}
+2020-10-28 09:55:47,156:INFO:setting login settings: {}
+2020-10-28 09:55:50,126:INFO:Set random seed=230
+2020-10-28 09:55:50,128:INFO:- done
+2020-10-28 09:55:50,234:INFO:Set random seed=230
+2020-10-28 09:55:50,236:INFO:- done
+2020-10-28 09:55:51,170:INFO:Loading the datasets...
+2020-10-28 09:55:51,177:INFO:Loading the datasets...
+2020-10-28 09:55:51,180:INFO:- done
+2020-10-28 09:55:51,180:INFO:Define model and optimizer...
+2020-10-28 09:55:51,187:INFO:- done
+2020-10-28 09:55:51,187:INFO:Define model and optimizer...
+2020-10-28 09:55:53,948:INFO:using apex synced BN
+2020-10-28 09:55:53,951:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:55:53,956:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 09:55:53,981:INFO:using apex synced BN
+2020-10-28 09:55:53,984:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 09:55:53,987:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 09:55:54,029:INFO:- done
+2020-10-28 09:55:54,029:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:55:54,029:INFO:Epoch 1/5
+2020-10-28 09:55:54,030:INFO:- done
+2020-10-28 09:55:54,030:INFO:Starting training for 5 epoch(s)
+2020-10-28 09:55:54,030:INFO:Epoch 1/5
+2020-10-28 09:55:55,186:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:55:55,201:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 09:55:55,709:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-28 09:55:55,710:INFO:Epoch 2/5
+2020-10-28 09:55:55,715:INFO:- Eval metrics : accuracy: 0.190 ; loss: 1.790
+2020-10-28 09:55:55,780:INFO:- Found new best accuracy
+2020-10-28 09:55:55,782:INFO:Epoch 2/5
+2020-10-28 09:55:56,410:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-28 09:55:56,419:INFO:- Train metrics: accuracy: 0.734 ; loss: 1.543
+2020-10-28 09:55:56,897:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:55:56,898:INFO:Epoch 3/5
+2020-10-28 09:55:56,900:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.808
+2020-10-28 09:55:56,945:INFO:Epoch 3/5
+2020-10-28 09:55:57,597:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.406
+2020-10-28 09:55:57,606:INFO:- Train metrics: accuracy: 0.773 ; loss: 1.406
+2020-10-28 09:55:58,048:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.829
+2020-10-28 09:55:58,049:INFO:Epoch 4/5
+2020-10-28 09:55:58,052:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.829
+2020-10-28 09:55:58,099:INFO:Epoch 4/5
+2020-10-28 09:55:58,760:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-28 09:55:58,763:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.319
+2020-10-28 09:55:59,262:INFO:- Eval metrics : accuracy: 0.240 ; loss: 1.809
+2020-10-28 09:55:59,264:INFO:- Eval metrics : accuracy: 0.240 ; loss: 1.809
+2020-10-28 09:55:59,264:INFO:Epoch 5/5
+2020-10-28 09:55:59,516:INFO:- Found new best accuracy
+2020-10-28 09:55:59,517:INFO:Epoch 5/5
+2020-10-28 09:56:00,154:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.192
+2020-10-28 09:56:00,154:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.192
+2020-10-28 09:56:00,595:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.767
+2020-10-28 09:56:00,598:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.767
+2020-10-28 09:56:00,663:INFO:- Found new best accuracy
+2020-10-28 10:14:25,713:INFO:setting login settings: {}
+2020-10-28 10:14:25,746:INFO:setting login settings: {}
+2020-10-28 10:14:28,827:INFO:Set random seed=230
+2020-10-28 10:14:28,829:INFO:- done
+2020-10-28 10:14:29,078:INFO:Set random seed=230
+2020-10-28 10:14:29,080:INFO:- done
+2020-10-28 10:14:29,872:INFO:Loading the datasets...
+2020-10-28 10:14:29,877:INFO:Loading the datasets...
+2020-10-28 10:14:29,881:INFO:- done
+2020-10-28 10:14:29,881:INFO:Define model and optimizer...
+2020-10-28 10:14:29,887:INFO:- done
+2020-10-28 10:14:29,887:INFO:Define model and optimizer...
+2020-10-28 10:14:32,714:INFO:using apex synced BN
+2020-10-28 10:14:32,717:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 10:14:32,720:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 10:14:32,776:INFO:using apex synced BN
+2020-10-28 10:14:32,778:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 10:14:32,782:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 10:14:32,830:INFO:- done
+2020-10-28 10:14:32,830:INFO:- done
+2020-10-28 10:14:32,831:INFO:Starting training for 5 epoch(s)
+2020-10-28 10:14:32,831:INFO:Starting training for 5 epoch(s)
+2020-10-28 10:14:32,831:INFO:Epoch 1/5
+2020-10-28 10:14:32,831:INFO:Epoch 1/5
+2020-10-28 10:14:33,987:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 10:14:34,003:INFO:- Train metrics: accuracy: 0.227 ; loss: 1.775
+2020-10-28 10:14:34,515:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-28 10:14:34,523:INFO:- Eval metrics : accuracy: 0.186 ; loss: 1.790
+2020-10-28 10:14:34,528:INFO:Epoch 2/5
+2020-10-28 10:14:34,584:INFO:- Found new best accuracy
+2020-10-28 10:14:34,585:INFO:Epoch 2/5
+2020-10-28 10:14:35,233:INFO:- Train metrics: accuracy: 0.758 ; loss: 1.543
+2020-10-28 10:14:35,242:INFO:- Train metrics: accuracy: 0.758 ; loss: 1.543
+2020-10-28 10:14:35,668:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.809
+2020-10-28 10:14:35,670:INFO:- Eval metrics : accuracy: 0.167 ; loss: 1.809
+2020-10-28 10:14:35,671:INFO:Epoch 3/5
+2020-10-28 10:14:35,719:INFO:Epoch 3/5
+2020-10-28 10:14:36,356:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-28 10:14:36,356:INFO:- Train metrics: accuracy: 0.781 ; loss: 1.405
+2020-10-28 10:14:36,799:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-28 10:14:36,802:INFO:- Eval metrics : accuracy: 0.180 ; loss: 1.831
+2020-10-28 10:14:36,802:INFO:Epoch 4/5
+2020-10-28 10:14:36,849:INFO:Epoch 4/5
+2020-10-28 10:14:37,493:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 10:14:37,493:INFO:- Train metrics: accuracy: 0.820 ; loss: 1.318
+2020-10-28 10:14:37,966:INFO:- Eval metrics : accuracy: 0.232 ; loss: 1.811
+2020-10-28 10:14:37,968:INFO:- Eval metrics : accuracy: 0.232 ; loss: 1.811
+2020-10-28 10:14:37,969:INFO:Epoch 5/5
+2020-10-28 10:14:38,036:INFO:- Found new best accuracy
+2020-10-28 10:14:38,037:INFO:Epoch 5/5
+2020-10-28 10:14:38,680:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.192
+2020-10-28 10:14:38,682:INFO:- Train metrics: accuracy: 0.859 ; loss: 1.192
+2020-10-28 10:14:39,165:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.771
+2020-10-28 10:14:39,167:INFO:- Eval metrics : accuracy: 0.282 ; loss: 1.771
+2020-10-28 10:14:39,229:INFO:- Found new best accuracy
+2020-10-28 10:40:49,858:INFO:setting login settings: {}
+2020-10-28 10:40:49,903:INFO:setting login settings: {}
+2020-10-28 10:40:52,883:INFO:Set random seed=230
+2020-10-28 10:40:52,885:INFO:- done
+2020-10-28 10:40:52,931:INFO:Set random seed=230
+2020-10-28 10:40:52,933:INFO:- done
+2020-10-28 10:40:52,943:INFO:Loading the datasets...
+2020-10-28 10:40:52,947:INFO:Loading the datasets...
+2020-10-28 10:40:52,948:INFO:- done
+2020-10-28 10:40:52,948:INFO:Define model and optimizer...
+2020-10-28 10:40:52,957:INFO:- done
+2020-10-28 10:40:52,958:INFO:Define model and optimizer...
+2020-10-28 10:59:01,856:INFO:setting login settings: {}
+2020-10-28 10:59:01,874:INFO:setting login settings: {}
+2020-10-28 10:59:04,969:INFO:Set random seed=230
+2020-10-28 10:59:04,971:INFO:- done
+2020-10-28 10:59:05,250:INFO:Set random seed=230
+2020-10-28 10:59:05,252:INFO:- done
+2020-10-28 10:59:06,013:INFO:Loading the datasets...
+2020-10-28 10:59:06,015:INFO:Loading the datasets...
+2020-10-28 10:59:06,021:INFO:- done
+2020-10-28 10:59:06,022:INFO:Define model and optimizer...
+2020-10-28 10:59:06,026:INFO:- done
+2020-10-28 10:59:06,027:INFO:Define model and optimizer...
+2020-10-28 10:59:08,724:INFO:using apex synced BN
+2020-10-28 10:59:08,727:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 10:59:08,730:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 10:59:08,772:INFO:using apex synced BN
+2020-10-28 10:59:08,775:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 10:59:08,778:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 10:59:08,823:INFO:- done
+2020-10-28 10:59:08,823:INFO:- done
+2020-10-28 10:59:08,824:INFO:Starting training for 5 epoch(s)
+2020-10-28 10:59:08,824:INFO:Starting training for 5 epoch(s)
+2020-10-28 10:59:08,824:INFO:Epoch 1/5
+2020-10-28 10:59:08,824:INFO:Epoch 1/5
+2020-10-28 11:07:03,655:INFO:setting login settings: {}
+2020-10-28 11:07:03,686:INFO:setting login settings: {}
+2020-10-28 11:07:06,631:INFO:Set random seed=230
+2020-10-28 11:07:06,632:INFO:- done
+2020-10-28 11:07:06,926:INFO:Set random seed=230
+2020-10-28 11:07:06,928:INFO:- done
+2020-10-28 11:07:07,678:INFO:Loading the datasets...
+2020-10-28 11:07:07,679:INFO:Loading the datasets...
+2020-10-28 11:07:07,688:INFO:- done
+2020-10-28 11:07:07,688:INFO:Define model and optimizer...
+2020-10-28 11:07:07,689:INFO:- done
+2020-10-28 11:07:07,689:INFO:Define model and optimizer...
+2020-10-28 11:07:10,342:INFO:using apex synced BN
+2020-10-28 11:07:10,345:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 11:07:10,350:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 11:07:10,480:INFO:using apex synced BN
+2020-10-28 11:07:10,483:INFO:using apex fp16, opt_level=O1, keep_batchnorm_fp32=True
+2020-10-28 11:07:10,486:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 11:07:10,525:INFO:- done
+2020-10-28 11:07:10,525:INFO:Starting training for 5 epoch(s)
+2020-10-28 11:07:10,525:INFO:Epoch 1/5
+2020-10-28 11:07:10,526:INFO:- done
+2020-10-28 11:07:10,526:INFO:Starting training for 5 epoch(s)
+2020-10-28 11:07:10,526:INFO:Epoch 1/5

@@ -52,7 +52,7 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
 
     # summary for current eval loop
     summ = []
-    wandb_images = []
+    wandb_images_test = []
 
     # compute metrics over the dataset
     with torch.no_grad():
@@ -78,13 +78,21 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
                     summary_batch[k] = v
             summ.append(summary_batch)
 
+            wandb_images_test.append(wandb.Image(
+                data_batch[0], caption="Pred: {}\nTruth: {}".format(summary_batch['accuracy'], summary_batch['loss'])))
+
         # compute mean of all metrics in summary
         torch.cuda.synchronize()
         metrics_mean = {metric: np.mean([x[metric]
                                          for x in summ]) for metric in summ[0]}
         metrics_string = " ; ".join("{}: {:05.3f}".format(k, v)
                                     for k, v in metrics_mean.items())
+
         logging.info("- Eval metrics : " + metrics_string)
+        wandb.log({
+            "Test wandb images": wandb_images_test,
+            "Test Accuracy": 100 * metrics_mean['accuracy'],
+            "Test Loss": metrics_mean['loss']})
 
         return metrics_mean
 

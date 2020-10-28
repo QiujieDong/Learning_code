@@ -40,7 +40,7 @@ parser.add_argument('--local_rank', default=-1, type=int,
                     help="Rank of the current process")
 
 
-def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
+def train(model, optimizer, loss_fn, dataloader, metrics, params, args, epoch):
     """Train the model on 'num_steps' batches
 
     Args:
@@ -60,7 +60,7 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
     summ = []
     loss_avg = utils.RunningAverage()
 
-    wandb_images = []
+    wandb_images_train = []
 
     # Use tqdm for process for progress bar
     with tqdm(total=len(dataloader)) as t:
@@ -103,8 +103,8 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
             # Update the average loss
             loss_avg.update(loss.item())
 
-            wandb_images.append(wandb.Image(
-                train_batch[0], caption="Pred: {} Truth: {}".format(summary_batch['accuracy'], loss_avg)))
+            wandb_images_train.append(wandb.Image(
+                train_batch[0], caption="Epoch: {}\nPred: {}\nTruth: {}".format(epoch, summary_batch['accuracy'], summary_batch['loss'])))
 
             # Delete loss for saving memory
             del loss
@@ -123,10 +123,9 @@ def train(model, optimizer, loss_fn, dataloader, metrics, params, args):
 
     logging.info("- Train metrics: " + metrics_string)
     wandb.log({
-        "wandb_images": wandb_images,
-        "Accuracy": 100 * metrics_mean['accuracy'].item(),
-        "Loss": metrics_mean['loss'].item()})
-    print('done')
+        "Train wandb images": wandb_images_train,
+        "Train Accuracy": 100 * metrics_mean['accuracy'],
+        "Train Loss": metrics_mean['loss']})
 
 
 def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer, loss_fn, metrics, train_sampler, params, args):
@@ -169,7 +168,8 @@ def train_and_evaluate(model, train_dataloader, val_dataloader, optimizer, loss_
         logging.info("Epoch {}/{}".format(epoch + 1, params.num_epochs))
 
         # computer number of batches in one epoch (one full pass over the training set)
-        train(model, optimizer, loss_fn, train_dataloader, metrics, params, args)
+        train(model, optimizer, loss_fn, train_dataloader,
+              metrics, params, args, epoch)
 
         # Evaluate for one epoch on validation set
         val_metrics = evaluate(
@@ -217,7 +217,8 @@ if __name__ == '__main__':
     # Set the logger
     utils.set_logger(os.path.join(args.model_dir, 'train.log'))
     # set the logger using wandb, login first
-    wandb.init(project="Qiujie_PyTorchTemplate_train", config=params)
+    wandb.init(project="PyTorchTemplate_train", config=params)
+    wandb.tensorboard.patch(save=True, tensorboardX=True)
 
     # Set random seed
     logging.info("Set random seed={}".format(params.seed))

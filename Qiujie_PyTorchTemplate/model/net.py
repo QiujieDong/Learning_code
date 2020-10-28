@@ -33,6 +33,10 @@ class Net(nn.Module):
         self.fcbn1 = nn.BatchNorm1d(self.num_channels * 4)
         self.fc2 = nn.Linear(self.num_channels * 4, self.output_classes)
 
+        self.MaxPool2d = nn.MaxPool2d(2)  # kernel_size = 2
+        self.relu = nn.ReLU()
+        self.dropout = nn.Dropout2d()
+
         self._init_weight()
 
     def _init_weight(self):
@@ -58,16 +62,16 @@ class Net(nn.Module):
         """
 
         # Apply the convolution layers, followed by batch normalisation, maxpool and relu
-        s = torch.relu(torch.max_pool2d(self.bn1(self.conv1(s)), 2))
-        s = torch.relu(torch.max_pool2d(self.bn2(self.conv2(s)), 2))
-        s = torch.relu(torch.max_pool2d(self.bn3(self.conv3(s)), 2))
+        s = self.relu(self.MaxPool2d(self.bn1(self.conv1(s))))
+        s = self.relu(self.MaxPool2d(self.bn2(self.conv2(s))))
+        s = self.relu(self.MaxPool2d(self.bn3(self.conv3(s))))
 
         # flatten the output for each image
         s = s.view(s.shape[0], -1)
 
         # apply 2 fully connected layers with dropout. apply dropout if train=True
-        s = torch.dropout(torch.relu(self.fcbn1(self.fc1(s))),
-                          p=self.dropout_rate, train=True)
+        s = self.dropout(self.relu(self.fcbn1(self.fc1(s))),
+                         p=self.dropout_rate, inplace=True)
         s = self.fc2(s)
 
         return s
