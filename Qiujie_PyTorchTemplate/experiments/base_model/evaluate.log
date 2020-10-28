@@ -1,0 +1,36 @@
+2020-10-28 18:50:45,897:INFO:Set random seed=230
+2020-10-28 18:50:45,897:INFO:- done
+2020-10-28 18:50:45,898:INFO:Creating the datasets...
+2020-10-28 18:50:45,898:INFO:- done
+2020-10-28 18:50:45,898:INFO:Define model...
+2020-10-28 18:50:48,315:INFO:using apex synced BN
+2020-10-28 18:50:48,316:INFO:- done
+2020-10-28 18:57:55,441:INFO:Set random seed=230
+2020-10-28 18:57:55,442:INFO:- done
+2020-10-28 18:57:55,442:INFO:Creating the datasets...
+2020-10-28 18:57:55,443:INFO:- done
+2020-10-28 18:57:55,443:INFO:Define model...
+2020-10-28 18:57:57,894:INFO:using apex synced BN
+2020-10-28 18:57:57,895:INFO:- done
+2020-10-28 19:00:55,516:INFO:Set random seed=230
+2020-10-28 19:00:55,516:INFO:- done
+2020-10-28 19:00:55,548:INFO:Set random seed=230
+2020-10-28 19:00:55,548:INFO:- done
+2020-10-28 19:00:56,527:INFO:Creating the datasets...
+2020-10-28 19:00:56,528:INFO:- done
+2020-10-28 19:00:56,528:INFO:Define model...
+2020-10-28 19:00:56,533:INFO:Creating the datasets...
+2020-10-28 19:00:56,535:INFO:- done
+2020-10-28 19:00:56,535:INFO:Define model...
+2020-10-28 19:00:59,352:INFO:using apex synced BN
+2020-10-28 19:00:59,354:WARNING:Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 19:00:59,368:INFO:using apex synced BN
+2020-10-28 19:00:59,370:WARNING:Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 19:00:59,411:INFO:- done
+2020-10-28 19:00:59,413:INFO:- done
+2020-10-28 19:00:59,431:INFO:Starting testing...
+2020-10-28 19:01:04,259:INFO:Starting testing...
+2020-10-28 19:01:04,910:INFO:- Eval metrics : accuracy: 0.317 ; loss: 1.780
+2020-10-28 19:01:04,911:INFO:- Finishing testing
+2020-10-28 19:01:04,921:INFO:- Eval metrics : accuracy: 0.317 ; loss: 1.780
+2020-10-28 19:01:04,922:INFO:- Finishing testing

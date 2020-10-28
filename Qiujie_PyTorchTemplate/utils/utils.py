@@ -165,7 +165,7 @@ def load_checkpoint(checkpoint_path, args, model, optimizer=None):
         checkpoint = torch.load(
             checkpoint_path, map_location=lambda storage, loc: storage.cuda(args.local_rank))
 
-    model.load_state_dict(checkpoint_path['state_dict'])
+    model.load_state_dict(checkpoint['state_dict'])
 
     if optimizer:
         optimizer.load_state_dict(checkpoint['optim_dict'])

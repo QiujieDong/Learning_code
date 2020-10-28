@@ -1,0 +1,34 @@
+2020-10-28 18:29:26,456:INFO: Set random seed=230
+2020-10-28 18:29:26,456:INFO: - done.
+2020-10-28 18:29:26,493:INFO: Set random seed=230
+2020-10-28 18:29:26,494:INFO: - done.
+2020-10-28 18:29:27,467:INFO: Creating the dataset...
+2020-10-28 18:29:27,468:INFO: Creating the dataset...
+2020-10-28 18:31:15,433:INFO: Set random seed=230
+2020-10-28 18:31:15,434:INFO: - done.
+2020-10-28 18:31:15,486:INFO: Set random seed=230
+2020-10-28 18:31:15,487:INFO: - done.
+2020-10-28 18:31:15,501:INFO: Creating the dataset...
+2020-10-28 18:31:15,506:INFO: Creating the dataset...
+2020-10-28 18:32:25,741:INFO: Set random seed=230
+2020-10-28 18:32:25,742:INFO: - done.
+2020-10-28 18:32:25,771:INFO: Set random seed=230
+2020-10-28 18:32:25,771:INFO: - done.
+2020-10-28 18:32:25,785:INFO: Creating the dataset...
+2020-10-28 18:32:25,794:INFO: Creating the dataset...
+2020-10-28 18:32:53,171:INFO: Set random seed=230
+2020-10-28 18:32:53,172:INFO: - done.
+2020-10-28 18:32:53,224:INFO: Set random seed=230
+2020-10-28 18:32:53,224:INFO: - done.
+2020-10-28 18:32:54,182:INFO: Creating the dataset...
+2020-10-28 18:32:54,184:INFO: - done.
+2020-10-28 18:32:54,184:INFO: Define model and optimizer...
+2020-10-28 18:32:54,190:INFO: Creating the dataset...
+2020-10-28 18:32:54,193:INFO: - done.
+2020-10-28 18:32:54,193:INFO: Define model and optimizer...
+2020-10-28 18:32:56,999:INFO: using apex synced BN
+2020-10-28 18:32:57,001:WARNING: Process rank: 1, device: cuda:1, n_gpu: 2, distributed training: True
+2020-10-28 18:32:57,012:INFO: using apex synced BN
+2020-10-28 18:32:57,014:WARNING: Process rank: 0, device: cuda:0, n_gpu: 2, distributed training: True
+2020-10-28 18:33:02,523:INFO: - Eval metrics : accuracy: 0.317 ; loss: 1.658
+2020-10-28 18:33:02,541:INFO: - Eval metrics : accuracy: 0.317 ; loss: 1.658

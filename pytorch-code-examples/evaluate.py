@@ -16,7 +16,7 @@ import model.net as net
 import model.data_loader as data_loader
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_dir', default='data/64x64_SIGNS',
+parser.add_argument('--data_dir', default='/data/SIGNS_data/64x64_SIGNS',
                     help="Directory containing the dataset")
 parser.add_argument('--model_dir', default='experiments/base_model',
                     help="Directory containing params.json")
@@ -44,23 +44,26 @@ def evaluate(model, loss_fn, dataloader, metrics, params, args):
     summ = []
 
     # compute metrics over the dataset
-    with torch.no_grad(): #不进行求导计算梯度
+    with torch.no_grad():  # 不进行求导计算梯度
         for data_batch, labels_batch in dataloader:
             # move to device
             data_batch = data_batch.to(args.device, non_blocking=params.cuda)
-            labels_batch = labels_batch.to(args.device, non_blocking=params.cuda)
+            labels_batch = labels_batch.to(
+                args.device, non_blocking=params.cuda)
 
             # compute model output
             output_batch = model(data_batch)
             loss = loss_fn(output_batch, labels_batch)
 
             # compute all metrics on this batch (Use predefine in Net.py)
-            summary_batch = {metric: metrics[metric](output_batch, labels_batch) for metric in metrics}
+            summary_batch = {metric: metrics[metric](
+                output_batch, labels_batch) for metric in metrics}
             summary_batch['loss'] = loss.item()
 
             if params.distributed:
                 for k, v in summary_batch.items():
-                    v = reduce_tensor(torch.tensor(v, device=args.device), args).item()
+                    v = reduce_tensor(torch.tensor(
+                        v, device=args.device), args).item()
                     summary_batch[k] = v
             summ.append(summary_batch)
 
@@ -78,7 +81,8 @@ if __name__ == '__main__':
     # Load the parameters
     args = parser.parse_args()
     json_path = os.path.join(args.model_dir, 'params.json')
-    assert os.path.isfile(json_path), "No json configuration file found at {}".format(json_path)
+    assert os.path.isfile(
+        json_path), "No json configuration file found at {}".format(json_path)
     params = utils.Params(json_path)
 
     # Get the logger
@@ -91,7 +95,6 @@ if __name__ == '__main__':
 
     # Set device
     device = None
-    args.world_size = 1
     if params.cuda:
         device = torch.device('cuda')
         cudnn.benchmark = True  # Enable cudnn
@@ -108,7 +111,8 @@ if __name__ == '__main__':
     # Create the input data pipeline
     logging.info("Creating the dataset...")
     # fetch dataloaders
-    dataloaders, samplers = data_loader.fetch_dataloader(['test'], args.data_dir, params)
+    dataloaders, samplers = data_loader.fetch_dataloader(
+        ['test'], args.data_dir, params)
     test_dl = dataloaders['test']
     logging.info("- done.")
 
@@ -134,11 +138,13 @@ if __name__ == '__main__':
     metrics = net.metrics
 
     # Reload weights from the saved file
-    utils.load_checkpoint(os.path.join(args.model_dir, args.restore_file + '.pth.tar'), args, model)
+    utils.load_checkpoint(os.path.join(
+        args.model_dir, args.restore_file + '.pth.tar'), args, model)
 
     # Evaluate
     test_metrics = evaluate(model, loss_fn, test_dl, metrics, params, args)
-    save_path = os.path.join(args.model_dir, "metrics_test_{}.json".format(args.restore_file))
+    save_path = os.path.join(
+        args.model_dir, "metrics_test_{}.json".format(args.restore_file))
 
     # Save on GPU#0
     if args.local_rank in [-1, 0]:
