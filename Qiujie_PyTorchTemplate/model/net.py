@@ -35,7 +35,7 @@ class Net(nn.Module):
 
         self.MaxPool2d = nn.MaxPool2d(2)  # kernel_size = 2
         self.relu = nn.ReLU()
-        self.dropout = nn.Dropout2d()
+        self.dropout = nn.Dropout2d(p=self.dropout_rate, inplace=True)
 
         self._init_weight()
 
@@ -70,8 +70,7 @@ class Net(nn.Module):
         s = s.view(s.shape[0], -1)
 
         # apply 2 fully connected layers with dropout. apply dropout if train=True
-        s = self.dropout(self.relu(self.fcbn1(self.fc1(s))),
-                         p=self.dropout_rate, inplace=True)
+        s = self.dropout(self.relu(self.fcbn1(self.fc1(s))))
         s = self.fc2(s)
 
         return s

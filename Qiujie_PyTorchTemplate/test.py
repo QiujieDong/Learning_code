@@ -1,4 +1,4 @@
-"""Evaluates the model using PyTorch."""
+"""Test the model using PyTorch."""
 
 import argparse
 import logging

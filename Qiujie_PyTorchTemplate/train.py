@@ -25,7 +25,7 @@ import wandb  # replace logging with wandb
 
 # use extend packages
 import model.net as net
-import model.data_loader as data_loader
+import utils.data_loader as data_loader
 import utils.utils as utils
 from evaluate import evaluate
 
@@ -218,7 +218,6 @@ if __name__ == '__main__':
     utils.set_logger(os.path.join(args.model_dir, 'train.log'))
     # set the logger using wandb, login first
     wandb.init(project="PyTorchTemplate_train", config=params)
-    wandb.tensorboard.patch(save=True, tensorboardX=True)
 
     # Set random seed
     logging.info("Set random seed={}".format(params.seed))
@@ -254,7 +253,8 @@ if __name__ == '__main__':
     model = net.Net(params).to(args.device)
     optimizer = optim.Adam(model.parameters(), lr=params.learning_rate)
 
-    wandb.watch(model)
+    # Use wandb to visualize model
+    wandb.watch(model, log="all")
 
     if params.sync_bn:
         logging.info("using apex synced BN")
