@@ -1,10 +1,8 @@
-# Hand Signs Recognition with PyTorch
+# The Template with PyTorch
 
-*Authors: Surag Nair, Olivier Moindrot and Guillaume Genthial*
+Reference: [pytorch-code-examples](https://github.com/QiujieDong/Learning_code/tree/master/pytorch-code-examples)
 
-Take the time to read the [tutorials](https://cs230-stanford.github.io/project-starter-code.html).
-
-Note: all scripts must be run in folder `pytorch/vision`.
+add: [wandb_logging](https://www.wandb.com/)
 
 ## Requirements
 
@@ -18,7 +16,7 @@ pip install -r requirements.txt
 
 When you're done working on the project, deactivate the virtual environment with `deactivate`.
 
-## Task
+## Example
 
 Given an image of a hand doing a sign representing 0, 1, 2, 3, 4 or 5, predict the correct label.
 
@@ -124,5 +122,5 @@ Once you get something working for your dataset, feel free to edit any part of t
 - [Tutorials](http://pytorch.org/tutorials/)
 - [PyTorch warm-up](https://github.com/jcjohnson/pytorch-examples)
 
-[SIGNS]: https://drive.google.com/file/d/1ufiR6hUKhXoAyiBNsySPkUwlvE_wfEHC/view?usp=sharing
+- [SIGNS](https://drive.google.com/file/d/1ufiR6hUKhXoAyiBNsySPkUwlvE_wfEHC/view?usp=sharing) 
 
