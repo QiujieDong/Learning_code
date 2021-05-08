@@ -8,8 +8,8 @@ import open3d as o3d
 
 if __name__ == '__main__':
     # mesh = trimesh.load_mesh('E:\\dataset\\asset\\famous_model\\famous_sparse\\03_meshes\\horse_face20k.ply')
-    mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\faust\\tr_reg_000.ply")
-    # mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\scape\\mesh044.off")
+    # mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\faust\\tr_reg_000.ply")
+    mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\scape\\mesh044.off")
     mesh: trimesh.Trimesh
     cot = igl.cotmatrix(mesh.vertices, mesh.faces).toarray()
     cot = -cot
