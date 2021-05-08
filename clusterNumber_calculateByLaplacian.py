@@ -7,8 +7,8 @@ from sklearn.cluster import KMeans
 import open3d as o3d
 
 if __name__ == '__main__':
-    mesh = trimesh.load_mesh('E:\\dataset\\asset\\famous_model\\famous_sparse\\03_meshes\\horse_face20k.ply')
-    # mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\faust\\tr_reg_000.ply")
+    # mesh = trimesh.load_mesh('E:\\dataset\\asset\\famous_model\\famous_sparse\\03_meshes\\horse_face20k.ply')
+    mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\faust\\tr_reg_000.ply")
     # mesh = trimesh.load_mesh("E:\\dataset\\sig17_seg_benchmark\\meshes\\train\\scape\\mesh044.off")
     mesh: trimesh.Trimesh
     cot = igl.cotmatrix(mesh.vertices, mesh.faces).toarray()
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     value, vector = np.linalg.eigh(cot)
 
     o3d_mesh = mesh.as_open3d
-    # value_ind = np.argsort(value)
+    value_ind = np.argsort(value)
 
     # pts = o3d.geometry.PointCloud()
     # pts.points = o3d.utility.Vector3dVector(mesh.vertices[value_ind[:20]])
