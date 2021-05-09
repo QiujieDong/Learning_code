@@ -1,0 +1,3 @@
+checkpoints/*/*_net.pth
+checkpoints/*/meshes
+view_result
