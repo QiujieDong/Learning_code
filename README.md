@@ -18,4 +18,5 @@
 ## examples
 
 - clusterNumber_calculateByLaplacian
+- PA.py includes some methods from [[Zixiong Wang]](https://github.com/wzxshhz123)
 
