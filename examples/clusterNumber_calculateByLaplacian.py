@@ -19,6 +19,7 @@ if __name__ == '__main__':
     # o3d_mesh = mesh.as_open3d
     value_ind = np.argsort(value)
     print(value_ind)
+    print(vector[2])
     # pts = o3d.geometry.PointCloud()
     # pts.points = o3d.utility.Vector3dVector(mesh.vertices[value_ind[:20]])
     #
