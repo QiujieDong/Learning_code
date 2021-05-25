@@ -16,7 +16,7 @@ class Writer:
         self.opt = opt
         self.save_dir = os.path.join(opt.checkpoints_dir, opt.name)
         self.log_name = os.path.join(self.save_dir, 'loss_log.txt')
-        self.testacc_log = os.path.join(self.save_dir, 'testacc_log.txt')
+        self.testacc_log = os.path.join(self.save_dir, 'testacc_log.txt.txt')
         self.start_logs()
         self.nexamples = 0
         self.ncorrect = 0
