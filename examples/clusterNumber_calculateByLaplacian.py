@@ -16,14 +16,12 @@ if __name__ == '__main__':
     cot = -cot
     value, vector = np.linalg.eigh(cot)
 
-    # o3d_mesh = mesh.as_open3d
     value_ind = np.argsort(value)
     print(value_ind)
     print(vector[2])
-    # pts = o3d.geometry.PointCloud()
-    # pts.points = o3d.utility.Vector3dVector(mesh.vertices[value_ind[:20]])
-    #
-    # o3d.visualization.draw_geometries([o3d_mesh, pts])
+ 
+
+    # 可视化特征值变化信息
     # value = np.sort(value)[::-1]
     # value = np.sort(value)
     # value_norm = (value) / (value.max())
@@ -31,18 +29,20 @@ if __name__ == '__main__':
     # plt.plot(value[:10])
     # plt.show()
 
+
+    # 可视化mesh上的顶点的分类
     # model = KMeans(n_clusters=6, random_state=0)
     # model.fit(vector)
     # labels = model.labels_
     # # plt.scatter(mesh.vertices[:, 0], mesh.vertices[:, 1], c=labels)
     # # plt.show()
-    #
+    
     # max_label = labels.max()
     # colors = plt.get_cmap("tab20")(labels / (max_label if max_label > 0 else 1))
-    #
+    
     # pts = o3d.geometry.PointCloud()
     # pts.points = o3d.utility.Vector3dVector(mesh.vertices)
     # pts.colors = o3d.utility.Vector3dVector(colors[:, :3])
-    #
+    
     # o3d.visualization.draw_geometries([pts])
 
