@@ -60,7 +60,7 @@ class ClassifierModel:
         return out
 
     def backward(self, out):
-        self.loss = self.criterion(out, self.labels)
+        self.loss = self.criterion(out, self.labels) #TODO
         self.loss.backward()  # 反向传播求解梯度
 
     def optimize_parameters(self):
@@ -118,7 +118,7 @@ class ClassifierModel:
         if self.opt.dataset_mode == 'classification':
             correct = pred.eq(labels).sum  # eq()判断对象是否相等
         elif self.opt.dataset_mode == 'segmentation':
-            correct = seg_accuracy(pred, self.soft_label, self.mesh)  # seg_accuracy是分割准确率的计算方法
+            correct = seg_accuracy(pred, self.soft_label, self.mesh)  # seg_accuracy是分割准确率的计算方法 #TODO
         return correct
 
     def export_segmentation(self, pred_seg):  # 进行mesh输出结果的相关操作

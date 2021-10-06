@@ -17,7 +17,7 @@ class BaseOptions:
         self.parser.add_argument(
             '--dataset_mode', choices={"classification", "segmentation"}, default='classification')
         self.parser.add_argument('--ninput_edges', type=int, default=750,
-                                 help='# of input edges (will include dummy edges)')
+                                 help='# of input edges (will include dummy edges)') #TODO
         self.parser.add_argument('--max_dataset_size', type=int,
                                  default=float("inf"), help='Maximum number of samples per epoch')
         # network params

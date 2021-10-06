@@ -41,7 +41,7 @@ class SegmentationData(BaseDataset):  # 创建seg的dataloader
         meta['label'] = label
         soft_label = read_sseg(self.sseg_paths[index])  # 返回一个包含1的array
         meta['soft_label'] = pad(
-            soft_label, self.opt.ninput_edges, val=-1, dim=0)
+            soft_label, self.opt.ninput_edges, val=-1, dim=0) #TODO
         # get edge features
         edge_features = mesh.extract_features()  # 返回feature
         edge_features = pad(edge_features, self.opt.ninput_edges)
