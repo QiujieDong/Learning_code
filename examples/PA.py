@@ -239,13 +239,8 @@ def lap_smooth_implicit(mesh: trimesh.Trimesh, t, lambda_coffe, h):
 if __name__ == '__main__':
     def Q1():
         lilium_s = trimesh.load('cw2_meshes/curvatures/lilium_s.obj', process=False)
-        plane = trimesh.load('cw2_meshes/curvatures/plane.obj')
-        # Q1 mean
-        show_curvature_by_uniform_lap(lilium_s, type='mean')
-        show_curvature_by_uniform_lap(plane, type='mean')
-        # Q1 gauss
-        show_curvature_by_uniform_lap(lilium_s, type='gauss')
-        show_curvature_by_uniform_lap(plane, type='gauss')
+        show_curvature_by_cot_lap(lilium_s, type='mean')
+        show_curvature_by_cot_lap(plane, type='gauss')
 
 
     def Q2():
@@ -253,8 +248,8 @@ if __name__ == '__main__':
 
 
     def Q3():
-        lilium_s = trimesh.load('cw2_meshes/curvatures/lilium_s.obj', process=False)
-        plane = trimesh.load('cw2_meshes/curvatures/plane.obj')
+        lilium_s = trimesh.load('0006.obj', process=False)
+        plane = trimesh.load('0006.obj')
         # Q1 mean
         show_curvature_by_cot_lap(lilium_s, type='mean')
         show_curvature_by_cot_lap(plane, type='mean')
@@ -294,4 +289,4 @@ if __name__ == '__main__':
         lap_smooth_implicit(bunny, t=10, lambda_coffe=0.01, h=0.00001)
 
 
-    Q4()
+    Q1()
