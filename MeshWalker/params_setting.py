@@ -186,7 +186,7 @@ def coseg_params(type):  # aliens / chairs / vases
     params.datasets2use['test'] = [p + '*test*.npz']
 
     params.iters_to_train = 200e3
-    params.train_data_augmentation = {'rotation': 360}
+    params.train_data_augmentation = {'rotation': 360}  #TODO
 
     params.full_accuracy_test = {'dataset_expansion': params.datasets2use['test'][0],
                                  'n_iters': 32}
