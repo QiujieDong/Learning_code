@@ -97,17 +97,17 @@ class HumanSegOrigDataset(Dataset):
             # shrec
             mesh_dirpath = os.path.join(self.root_dir, "meshes", "test", "shrec")
             label_dirpath = os.path.join(self.root_dir, "segs", "test", "shrec")
-            for iShrec in range(1, 21):
-                if iShrec == 16 or iShrec == 18: continue  # why are these messing from the dataset? so many questions...
-                if iShrec == 12:
-                    mesh_fname = "12_fix_orientation.off"
-                else:
-                    mesh_fname = "{}.off".format(iShrec)
-                label_fname = "shrec_{}_full.txt".format(iShrec)
-                mesh_fullpath = os.path.join(mesh_dirpath, mesh_fname)
-                label_fullpath = os.path.join(label_dirpath, label_fname)
-                self.mesh_files.append(mesh_fullpath)
-                label_files.append(label_fullpath)
+            # for iShrec in range(1, 21):
+            #     if iShrec == 16 or iShrec == 18: continue  # why are these messing from the dataset? so many questions...
+            #     if iShrec == 12:
+            #         mesh_fname = "12_fix_orientation.off"
+            #     else:
+            #         mesh_fname = "{}.off".format(iShrec)
+            #     label_fname = "shrec_{}_full.txt".format(iShrec)
+            #     mesh_fullpath = os.path.join(mesh_dirpath, mesh_fname)
+            #     label_fullpath = os.path.join(label_dirpath, label_fname)
+            #     self.mesh_files.append(mesh_fullpath)
+            #     label_files.append(label_fullpath)
 
             for _, iShrec in enumerate([30, 40]):
                 for i in range(0, 6):
