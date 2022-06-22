@@ -17,6 +17,7 @@
 
 ## examples
 
+- KernelSignature: [[HKS]](http://www.lix.polytechnique.fr/~maks/papers/hks.pdf) and [[WKS]](https://imagine.enpc.fr/~aubrym/projects/wks/texts/2011-wave-kernel-signature.pdf)
 - clusterNumber_calculateByLaplacian
 - PA.py includes some methods from [[Zixiong Wang]](https://github.com/wzxshhz123)
 
